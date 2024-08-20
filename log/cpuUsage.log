@@ -484,3 +484,27 @@
 [06/11/21] [19:09:09] {"cpu":{"user":1890000,"system":328000},"mem":{"rss":223899648,"heapTotal":76550144,"heapUsed":74017560,"external":1639810,"arrayBuffers":135224},"uptime":150.6948833}
 [06/11/21] [19:09:09] The script uses approximately 70.58887481689453 MB
 [06/11/21] [19:09:09] V8 Total Heap Size 4073.89 MB
+[20/08/24] [15:36:17] {"cpu":{"user":1296000,"system":750000},"mem":{"rss":177373184,"heapTotal":31657984,"heapUsed":30531744,"external":1579529,"arrayBuffers":70612},"uptime":39.7655657}
+[20/08/24] [15:36:17] V8 Total Heap Size 4115.58 MB
+[20/08/24] [15:36:17] The script uses approximately 29.12157440185547 MB
+[20/08/24] [15:36:47] {"cpu":{"user":1312000,"system":750000},"mem":{"rss":177352704,"heapTotal":32182272,"heapUsed":30409152,"external":1579569,"arrayBuffers":70612},"uptime":69.7660821}
+[20/08/24] [15:36:47] The script uses approximately 29.000656127929688 MB
+[20/08/24] [15:36:47] V8 Total Heap Size 4115.72 MB
+[20/08/24] [15:37:17] {"cpu":{"user":1343000,"system":750000},"mem":{"rss":177348608,"heapTotal":32182272,"heapUsed":30422320,"external":1579569,"arrayBuffers":70612},"uptime":99.7664739}
+[20/08/24] [15:37:17] The script uses approximately 29.013214111328125 MB
+[20/08/24] [15:37:17] V8 Total Heap Size 4115.71 MB
+[20/08/24] [15:37:47] The script uses approximately 28.989601135253906 MB
+[20/08/24] [15:37:47] V8 Total Heap Size 4115.74 MB
+[20/08/24] [15:37:47] {"cpu":{"user":1343000,"system":750000},"mem":{"rss":177328128,"heapTotal":32182272,"heapUsed":30397560,"external":1579569,"arrayBuffers":70612},"uptime":129.7696771}
+[20/08/24] [15:38:17] The script uses approximately 28.907638549804688 MB
+[20/08/24] [15:38:17] {"cpu":{"user":1359000,"system":750000},"mem":{"rss":177197056,"heapTotal":32182272,"heapUsed":30311616,"external":1579569,"arrayBuffers":70612},"uptime":159.7740462}
+[20/08/24] [15:38:17] V8 Total Heap Size 4115.83 MB
+[20/08/24] [15:38:47] {"cpu":{"user":1375000,"system":750000},"mem":{"rss":177156096,"heapTotal":32182272,"heapUsed":30308784,"external":1579569,"arrayBuffers":70612},"uptime":189.7764756}
+[20/08/24] [15:38:47] V8 Total Heap Size 4115.83 MB
+[20/08/24] [15:38:47] The script uses approximately 28.90515899658203 MB
+[20/08/24] [15:39:17] {"cpu":{"user":1593000,"system":812000},"mem":{"rss":9605120,"heapTotal":32706560,"heapUsed":30903968,"external":3160625,"arrayBuffers":144340},"uptime":219.7797133}
+[20/08/24] [15:39:17] The script uses approximately 29.472747802734375 MB
+[20/08/24] [15:39:17] V8 Total Heap Size 4115.17 MB
+[20/08/24] [15:39:47] {"cpu":{"user":1656000,"system":843000},"mem":{"rss":13688832,"heapTotal":32706560,"heapUsed":30885040,"external":1653297,"arrayBuffers":144340},"uptime":249.780445}
+[20/08/24] [15:39:47] The script uses approximately 29.454513549804688 MB
+[20/08/24] [15:39:47] V8 Total Heap Size 4115.21 MB

@@ -112,8 +112,8 @@ mp.events.add('render', () => {
           false,
           2,
           false,
-          '',
-          '',
+          'null',
+          'null',
           false
         );
       }

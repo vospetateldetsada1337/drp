@@ -13,3 +13,18 @@
 
 
   
+[20/08/24] [15:38:52] 
+  !!! unhandledRejection !!!
+  reason
+  {"name":"SequelizeConnectionError","parent":{"text":"Client does not support authentication protocol 'auth_gssapi_client' requested by server. ","sql":null,"fatal":true,"errno":45025,"sqlState":"08004","code":"ER_AUTHENTICATION_PLUGIN_NOT_SUPPORTED"},"original":{"text":"Client does not support authentication protocol 'auth_gssapi_client' requested by server. ","sql":null,"fatal":true,"errno":45025,"sqlState":"08004","code":"ER_AUTHENTICATION_PLUGIN_NOT_SUPPORTED"}}
+  promise
+  {"isFulfilled":false,"isRejected":true,"rejectionReason":{"name":"SequelizeConnectionError","parent":{"text":"Client does not support authentication protocol 'auth_gssapi_client' requested by server. ","sql":null,"fatal":true,"errno":45025,"sqlState":"08004","code":"ER_AUTHENTICATION_PLUGIN_NOT_SUPPORTED"},"original":{"text":"Client does not support authentication protocol 'auth_gssapi_client' requested by server. ","sql":null,"fatal":true,"errno":45025,"sqlState":"08004","code":"ER_AUTHENTICATION_PLUGIN_NOT_SUPPORTED"}}}
+  --------
+  LAST DEBUG
+  ["init"]
+  --------
+
+
+
+
+  

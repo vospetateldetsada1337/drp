@@ -132,13 +132,13 @@ const SET_RAGE_BETA = () => {
 };
 
 exports.SET_RAGE_BETA = SET_RAGE_BETA;
-},{}],"r9A/":[function(require,module,exports) {
+},{}],"r9AO":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.enableHackTimeout = exports.enabledHackTimeout = void 0;
+exports.enabledHackTimeout = exports.enableHackTimeout = void 0;
 let hack = setInterval(() => {}, 0);
 
 const enabledHackTimeout = () => {
@@ -158,16 +158,16 @@ const enableHackTimeout = () => {
 };
 
 exports.enableHackTimeout = enableHackTimeout;
-},{}],"8Qkc":[function(require,module,exports) {
+},{}],"Qkcg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.fixString = fixString;
-exports.gtaStrToHtml = gtaStrToHtml;
-exports.getFirstColor = getFirstColor;
 exports.getColor = getColor;
+exports.getFirstColor = getFirstColor;
+exports.gtaStrToHtml = gtaStrToHtml;
 
 String.prototype.regexIndexOf = function (regex, startpos) {
   var indexOf = this.substring(startpos || 0).search(regex);
@@ -287,13 +287,13 @@ function getColor(fnd) {
       break;
   }
 }
-},{}],"Z8L+":[function(require,module,exports) {
+},{}],"Z8LL":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.MainEvent = void 0; // zalupa
+exports.MainEvent = void 0;
 
 class MainEvent {
   constructor() {
@@ -379,8 +379,9 @@ exports.MainEvent = MainEvent;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.formatTime = void 0;
 exports.getRandomInt = getRandomInt;
-exports.formatTime = exports.randomArrayEl = exports.getTime = exports.wait = exports.sleep = exports.testJSON = void 0;
+exports.wait = exports.testJSON = exports.sleep = exports.randomArrayEl = exports.getTime = void 0;
 
 const testJSON = text => {
   if (typeof text !== 'string') {
@@ -511,7 +512,7 @@ class ServerEventClass extends _event.MainEvent {
 
       for (let q in fncs) {
         let func = fncs[q];
-        values.push((await func.bind(func.prototype)(...args)));
+        values.push(await func.bind(func.prototype)(...args));
       }
 
       if (!values.length) {
@@ -654,13 +655,13 @@ mp.events.triggerBrowser = ServerEvent.triggerBrowser.bind(mp.events);
 mp.events.callLocal = ServerEvent.callLocal.bind(mp.events);
 mp.events.callClient = ServerEvent.callClient.bind(mp.events);
 mp.events.callBrowser = ServerEvent.callBrowser.bind(mp.events);
-},{"../util/event":"Z8L+","../util/methods":"Z5QB"}],"bNis":[function(require,module,exports) {
+},{"../util/event":"Z8LL","../util/methods":"Z5QB"}],"bNis":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.PillBoxCost = exports.itemCosts = exports.weaponCost = exports.businessNalog = exports.stockSize = exports.mafiaCarsUnlockCdtimer = exports.mafiaCarsCdtimer = exports.mafiaCars = exports.kitchenIntDataUtil = void 0;
+exports.weaponCost = exports.stockSize = exports.mafiaCarsUnlockCdtimer = exports.mafiaCarsCdtimer = exports.mafiaCars = exports.kitchenIntDataUtil = exports.itemCosts = exports.businessNalog = exports.PillBoxCost = void 0;
 const kitchenIntDataUtil = [[349.8293, -932.1685, 45.36568, 20000], [-1909.91, -575.0604, 18.09722, 20000], [-1282.89, 446.3326, 96.89471, 20000], [-1153.151, -1521.806, 9.642298, 20000], [-897.9225, -441.7401, 93.05853, 20000], [-852.9263, 688.3412, 151.8529, 20000], [-782.1923, 330.5791, 186.3132, 20000], [-758.5352, 610.5003, 143.1406, 20000], [-674.4797, 595.6437, 144.3797, 20000], [-618.301, 42.6407, 96.60004, 20000], [-566.1242, 656.9935, 144.832, 20000], [-111.3519, -6.549356, 69.51958, 20000], [-10.52031, -1428.414, 30.10148, 20000], [124.1809, 557.1547, 183.2971, 20000], [265.3231, -995.9853, -100.0086, 20000], [343.0825, 429.4016, 148.3808, 20000], [343.7529, -1002.998, -100.1962, 20000], [379.4201, 418.8586, 144.9001, 20000], [1395.23, 1145.007, 113.3336, 20000], [1975.355, 3818.645, 32.43632, 20000], [-9.682148, 520.001, 173.628, 30000], [-797.776, 187.5312, 71.60544, 30000], [-1440.387, 6759.043, 7.98046, 30000], [-769.8837, 340.0439, 210.397, 20000], [-787.7949, 330.3934, 157.599, 20000], [-782.215, 329.8719, 216.0382, 20000], [-778.6613, 327.9729, 195.086, 20000], [-1459.873, -534.1923, 54.52639, 20000], [-1473.994, -537.3419, 72.44417, 20000], [-31.02146, -587.9935, 87.71225, 20000], [-11.44843, -584.9959, 78.43073, 20000], [-896.725, -446.5864, 124.1319, 20000], [-912.0232, -371.7621, 83.07791, 20000], [-917.9376, -379.2882, 107.0377, 20000], [-918.7728, -386.1582, 112.6746, 20000], [-468.6447, -695.6874, 74.68432, 20000], [120.4625, -884.7316, 123.2703, 20000], [-674.1874, -858.9833, 40.64307, 20000], [-440.8985, 6274.877, 10.75166, 20000], [-57.75088, -620.3068, 75.99939, 20000], [930.5132, -548.4226, 42.63166, 20000]];
 exports.kitchenIntDataUtil = kitchenIntDataUtil;
 const mafiaCars = {
@@ -740,7 +741,7 @@ exports.PillBoxCost = PillBoxCost;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.houseFridgeCost = exports.houseFridgeAmount = exports.printListUtil = exports.propMutil = exports.propFutil = exports.clothMutil = exports.clothFutil = exports.itemsChoise = exports.healItemCost3 = exports.healItemCost2 = exports.healItemCost = exports.inventoryTypesUtil = exports.itemsUtil = exports.getDefaultCount = exports.ammoItemIdToMaxCountUtil = exports.getItemChoises = exports.convertInventoryItemObjectToArray = exports.convertInventoryItemArrayToObject = exports.groupItems = exports.isWeapon = exports.canEquip = exports.getItemNameHashById = exports.getItemHashById = exports.getItemNameById = exports.getItemName = exports.isAmmoBox = exports.getItemWeightInKGById = exports.getItemWeightById = exports.maxAmountTransferItem = void 0;
+exports.propMutil = exports.propFutil = exports.printListUtil = exports.maxAmountTransferItem = exports.itemsUtil = exports.itemsChoise = exports.isWeapon = exports.isAmmoBox = exports.inventoryTypesUtil = exports.houseFridgeCost = exports.houseFridgeAmount = exports.healItemCost3 = exports.healItemCost2 = exports.healItemCost = exports.groupItems = exports.getItemWeightInKGById = exports.getItemWeightById = exports.getItemNameHashById = exports.getItemNameById = exports.getItemName = exports.getItemHashById = exports.getItemChoises = exports.getDefaultCount = exports.convertInventoryItemObjectToArray = exports.convertInventoryItemArrayToObject = exports.clothMutil = exports.clothFutil = exports.canEquip = exports.ammoItemIdToMaxCountUtil = void 0;
 const maxAmountTransferItem = 10;
 exports.maxAmountTransferItem = maxAmountTransferItem;
 
@@ -1123,7 +1124,7 @@ const houseFridgeAmount = [100000, 500000, 1000000];
 exports.houseFridgeAmount = houseFridgeAmount;
 const houseFridgeCost = 250000;
 exports.houseFridgeCost = houseFridgeCost;
-},{}],"9ZRY":[function(require,module,exports) {
+},{}],"ZRYf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1394,7 +1395,7 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.fractionUtil = exports.fraction = exports.fractionList = exports.recLists = void 0;
+exports.recLists = exports.fractionUtil = exports.fractionList = exports.fraction = void 0;
 const recLists = [{
   name: "Рецепт на марихуану",
   param: "allow_marg",
@@ -2045,7 +2046,7 @@ mp.events.add('playerExitColshape', (player, shape) => {
 
   menu.close(player);
 });
-},{"../user":"+QE3","../modules/methods":"+qXS","../../util/fractions":"Zeqt"}],"71w9":[function(require,module,exports) {
+},{"../user":"QE3B","../modules/methods":"qXSp","../../util/fractions":"Zeqt"}],"w9k0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2386,7 +2387,7 @@ exports.weather = weather;
 setInterval(() => {
   weather.syncData();
 }, 3000);
-},{"../user":"+QE3","../modules/methods":"+qXS","../modules/entity/daynightEntity":"71w9"}],"uUTa":[function(require,module,exports) {
+},{"../user":"QE3B","../modules/methods":"qXSp","../modules/entity/daynightEntity":"w9k0"}],"uUTa":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2749,7 +2750,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.housesEntity = housesEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_houses"
 })], housesEntity);
-},{}],"8jh2":[function(require,module,exports) {
+},{}],"jh2U":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4047,7 +4048,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.userEntity = userEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_users"
 })], userEntity);
-},{"../../../util/vip":"8jh2"}],"buna":[function(require,module,exports) {
+},{"../../../util/vip":"jh2U"}],"buna":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4087,18 +4088,14 @@ let houses = {
 
     _housesEntity.housesEntity.findAll().then(rows => {
       rows.forEach(function (item) {
-        let needNewBlip = _methods.methods.isTestServer() && !item['is_buy'] && _methods.methods.getRandomInt(1, 4) != 1 ? false : true;
+        let pos = new mp.Vector3(item['x'], item['y'], item['z']);
+        houses.data.set(item.id, item);
 
-        if (needNewBlip) {
-          let pos = new mp.Vector3(parseFloat(item['x']), parseFloat(item['y']), parseFloat(item['z']));
-          houses.data.set(item.id, item);
+        _methods.methods.createStaticCheckpoint(pos.x, pos.y, pos.z, "Нажмите ~g~Е~s~ чтобы открыть меню");
 
-          _methods.methods.createStaticCheckpoint(pos.x, pos.y, pos.z, "Нажмите ~g~Е~s~ чтобы открыть меню");
+        let hBlip = _methods.methods.createBlip(pos, item.id == 1139 || item.id == 1141 ? 455 : 40, item['is_buy'] ? 59 : 69, item.id == 1139 || item.id == 1141 ? 0.8 : 0.4, "Дом", item['is_buy'] ? 1 : 0);
 
-          let hBlip = _methods.methods.createBlip(pos, item.id == 1139 || item.id == 1141 ? 455 : 40, item['is_buy'] ? 59 : 69, item.id == 1139 || item.id == 1141 ? 0.8 : 0.4, "Дом", item['is_buy'] ? 1 : 0);
-
-          hBlips.set(item.id, hBlip);
-        }
+        hBlips.set(item.id, hBlip);
       });
       count = rows.length;
 
@@ -4324,7 +4321,7 @@ let houses = {
   }
 };
 exports.houses = houses;
-},{"./modules/methods":"+qXS","./user":"+QE3","./coffer":"sKID","./modules/entity/housesEntity":"kvtc","./modules/entity/user":"xF3w"}],"/BQ3":[function(require,module,exports) {
+},{"./modules/methods":"qXSp","./user":"QE3B","./coffer":"sKID","./modules/entity/housesEntity":"kvtc","./modules/entity/user":"xF3w"}],"BQ3k":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4414,8 +4411,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getParkPosition = getParkPosition;
-exports.spawnParkMenu = spawnParkMenu;
 exports.loadParkPlace = void 0;
+exports.spawnParkMenu = spawnParkMenu;
 
 var _menu = require("../modules/menu");
 
@@ -4425,9 +4422,9 @@ var _methods = require("../modules/methods");
 
 var _parkPlaceEntity = require("../modules/entity/parkPlaceEntity");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -4484,7 +4481,7 @@ function getParkPosition(position, range = 50, type = 'vehicle') {
   if (typeof position.x != "number" || typeof position.y != "number" || typeof position.y != "number") return null;
   let search = [...places].map(([id, data]) => {
     let pos2 = new mp.Vector3(data.x, data.y, data.z);
-    if (data.type <= searchKey && _methods.methods.distanceToPos(pos2, position) <= range) return _objectSpread({}, data, {
+    if (data.type <= searchKey && _methods.methods.distanceToPos(pos2, position) <= range) return _objectSpread(_objectSpread({}, data), {}, {
       id,
       pos: pos2
     });
@@ -4505,7 +4502,7 @@ function getParkPosition(position, range = 50, type = 'vehicle') {
       });
 
       if (free) {
-        freeFound = _objectSpread({}, data, {
+        freeFound = _objectSpread(_objectSpread({}, data), {}, {
           rot: new mp.Vector3(data.rx, data.ry, data.rz)
         });
       }
@@ -4629,7 +4626,7 @@ function spawnParkMenu(player) {
   });
   m.open();
 }
-},{"../modules/menu":"Aiz7","../user":"+QE3","../modules/methods":"+qXS","../modules/entity/parkPlaceEntity":"/BQ3"}],"SdUa":[function(require,module,exports) {
+},{"../modules/menu":"Aiz7","../user":"QE3B","../modules/methods":"qXSp","../modules/entity/parkPlaceEntity":"BQ3k"}],"SdUa":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4945,7 +4942,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.carsEntity = carsEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_cars"
 })], carsEntity);
-},{}],"wd0+":[function(require,module,exports) {
+},{}],"wd09":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5568,14 +5565,14 @@ function buy(player, id, colorId) {
     const color = autosalon.colors[colorId][0];
 
     if (!_user.user.get(player, 'car_id1')) {
-      resolve((await autosalon.buyCar(player, 1, car, color)));
+      resolve(await autosalon.buyCar(player, 1, car, color));
       return;
     } else if (!_user.user.get(player, 'car_id2')) {
       if (!(_user.user.get(player, 'id_house') != 0 || _user.user.get(player, 'apartment_id') != 0 || _user.user.get(player, 'condo_id') != 0)) {
         return _user.user.bigAlert(player, 'У вас должен быть дом/склад/аппартаменты, чтобы купить 2-й транспорт', 'warning'), resolve(false);
       }
 
-      resolve((await autosalon.buyCar(player, 2, car, color)));
+      resolve(await autosalon.buyCar(player, 2, car, color));
       return;
     } else if (!_user.user.get(player, 'car_id3')) {
       if (_user.user.get(player, 'id_house') == 0) {
@@ -5586,7 +5583,7 @@ function buy(player, id, colorId) {
         return _user.user.bigAlert(player, 'Ваш дом должен стоить минимум $1.000.000, чтобы купить 3-й транспорт', 'warning'), resolve(false);
       }
 
-      resolve((await autosalon.buyCar(player, 3, car, color)));
+      resolve(await autosalon.buyCar(player, 3, car, color));
       return;
     } else if (!_user.user.get(player, 'car_id4')) {
       if (_user.user.get(player, 'id_house') == 0) {
@@ -5597,7 +5594,7 @@ function buy(player, id, colorId) {
         return _user.user.bigAlert(player, 'Ваш дом должен стоить минимум $2.500.000, чтобы купить 4-й транспорт', 'warning'), resolve(false);
       }
 
-      resolve((await autosalon.buyCar(player, 4, car, color)));
+      resolve(await autosalon.buyCar(player, 4, car, color));
       return;
     } else if (!_user.user.get(player, 'car_id5')) {
       if (_user.user.get(player, 'id_house') == 0) {
@@ -5608,7 +5605,7 @@ function buy(player, id, colorId) {
         return _user.user.bigAlert(player, 'Ваш дом должен стоить минимум $5.000.000, чтобы купить 5-й транспорт', 'warning'), resolve(false);
       }
 
-      resolve((await autosalon.buyCar(player, 5, car, color)));
+      resolve(await autosalon.buyCar(player, 5, car, color));
       return;
     } else if (!_user.user.get(player, 'car_id6') || !_user.user.get(player, 'car_id7') || !_user.user.get(player, 'car_id8')) {
       return _user.user.bigAlert(player, '6, 7, 8 транспорт можно купить с помощью Appi Coins', 'info'), resolve(false);
@@ -5739,7 +5736,7 @@ mp.events.add('playerQuit', player => {
     }
   }, 5 * 60000);
 });
-},{"../../modules/methods":"+qXS","../../business":"y5vZ","../../modules/menu":"Aiz7","./colors":"K48O","./rentPos":"KFxM","../../user":"+QE3","../../vehicles":"pYYy","../../houses":"buna","../../modules/chat":"e1Zb","../../managers/parking":"ipvo","../../../util/newrage":"mgLX","../../modules/entity/autosalonModels":"SdUa","../../modules/entity/carsModel":"pv82","../../modules/entity/autosalonPercent":"qqav","../../modules/entity/carRent":"wd0+"}],"y5vZ":[function(require,module,exports) {
+},{"../../modules/methods":"qXSp","../../business":"y5vZ","../../modules/menu":"Aiz7","./colors":"K48O","./rentPos":"KFxM","../../user":"QE3B","../../vehicles":"pYYy","../../houses":"buna","../../modules/chat":"e1Zb","../../managers/parking":"ipvo","../../../util/newrage":"mgLX","../../modules/entity/autosalonModels":"SdUa","../../modules/entity/carsModel":"pv82","../../modules/entity/autosalonPercent":"qqav","../../modules/entity/carRent":"wd09"}],"y5vZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6699,7 +6696,7 @@ let business = {
   }
 };
 exports.business = business;
-},{"./modules/methods":"+qXS","./user":"+QE3","./coffer":"sKID","./modules/entity/business":"uUTa","../util/level":"MpJF","./modules/menu":"Aiz7","./modules/entity/autosalonPercent":"qqav","../util/sharedData":"bNis","./business/autosalon":"JYAF"}],"21EW":[function(require,module,exports) {
+},{"./modules/methods":"qXSp","./user":"QE3B","./coffer":"sKID","./modules/entity/business":"uUTa","../util/level":"MpJF","./modules/menu":"Aiz7","./modules/entity/autosalonPercent":"qqav","../util/sharedData":"bNis","./business/autosalon":"JYAF"}],"EWWr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7109,7 +7106,7 @@ let weapons = {
   }
 };
 exports.weapons = weapons;
-},{"./modules/methods":"+qXS"}],"bqq+":[function(require,module,exports) {
+},{"./modules/methods":"qXSp"}],"bqqA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7205,7 +7202,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.inventoryEntity = inventoryEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_items"
 })], inventoryEntity);
-},{}],"1Ogp":[function(require,module,exports) {
+},{}],"Ogpy":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7307,9 +7304,9 @@ var _enums = require("../enums");
 
 var _vehInfoEntity = require("./entity/vehInfoEntity");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -7366,7 +7363,7 @@ let vehicleInfo = {
         if (en) {
           let ind = _enums.enums.vehicleInfo.findIndex(v => v.id === id);
 
-          _enums.enums.vehicleInfo[ind] = _objectSpread({}, en, {}, values);
+          _enums.enums.vehicleInfo[ind] = _objectSpread(_objectSpread({}, en), values);
           mp.players.call('client:editVehicleInfo', [id, values]);
         }
 
@@ -7399,13 +7396,13 @@ let vehicleInfo = {
   }
 };
 exports.vehicleInfo = vehicleInfo;
-},{"./methods":"+qXS","../enums":"9ZRY","./entity/vehInfoEntity":"1Ogp"}],"oqg0":[function(require,module,exports) {
+},{"./methods":"qXSp","../enums":"ZRYf","./entity/vehInfoEntity":"Ogpy"}],"oqg0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.logStockEntity = exports.stocksEntity = void 0;
+exports.stocksEntity = exports.logStockEntity = void 0;
 
 var _sequelizeTypescript = require("sequelize-typescript");
 
@@ -7826,7 +7823,7 @@ let stock = {
   }
 };
 exports.stock = stock;
-},{"./modules/data":"5Edc","./modules/methods":"+qXS","./user":"+QE3","./coffer":"sKID","./modules/entity/stockEntity":"oqg0"}],"bsac":[function(require,module,exports) {
+},{"./modules/data":"Edcz","./modules/methods":"qXSp","./user":"QE3B","./coffer":"sKID","./modules/entity/stockEntity":"oqg0"}],"bsac":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7978,7 +7975,7 @@ let dispatcher = {
   }
 };
 exports.dispatcher = dispatcher;
-},{"../user":"+QE3","./weather":"uehX","../modules/methods":"+qXS","../../util/string":"8Qkc"}],"R7v/":[function(require,module,exports) {
+},{"../user":"QE3B","./weather":"uehX","../modules/methods":"qXSp","../../util/string":"Qkcg"}],"R7vB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8484,7 +8481,7 @@ let apartments = {
   }
 };
 exports.apartments = apartments;
-},{"./modules/data":"5Edc","./modules/methods":"+qXS","./user":"+QE3","./coffer":"sKID","./enums":"9ZRY","./modules/entity/apartmentEntity":"K5GH"}],"9J/Z":[function(require,module,exports) {
+},{"./modules/data":"Edcz","./modules/methods":"qXSp","./user":"QE3B","./coffer":"sKID","./enums":"ZRYf","./modules/entity/apartmentEntity":"K5GH"}],"JZQ2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8851,13 +8848,13 @@ let condo = {
   }
 };
 exports.condo = condo;
-},{"./modules/data":"5Edc","./modules/methods":"+qXS","./user":"+QE3","./coffer":"sKID","./modules/entity/condoEntity":"9J/Z"}],"nT9M":[function(require,module,exports) {
+},{"./modules/data":"Edcz","./modules/methods":"qXSp","./user":"QE3B","./coffer":"sKID","./modules/entity/condoEntity":"JZQ2"}],"nT9M":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.mafiaTerritoriesData = exports.containerMafiaTerritoryId = exports.mafiaCarsConf = void 0;
+exports.mafiaTerritoriesData = exports.mafiaCarsConf = exports.containerMafiaTerritoryId = void 0;
 const mafiaCarsConf = [{
   rank: 2,
   name: "Марихуаной",
@@ -8987,9 +8984,9 @@ var _data = require("../modules/data");
 
 var _business = require("../business");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -9978,7 +9975,7 @@ const tablet = {
     let q = [..._dispatcher.dispatcher.data[_user.user.getPlayerFraction(player)]].slice(-15);
     let dispatchq = [];
     q.map(item => {
-      dispatchq.push(_objectSpread({}, item, {
+      dispatchq.push(_objectSpread(_objectSpread({}, item), {}, {
         accept: item.accept ? filter(item.accept) : null,
         desc: filter(item.desc),
         title: filter(item.title),
@@ -10026,7 +10023,7 @@ function filter(str) {
   if (typeof str !== "string") str = String(str);
   return _methods.methods.filter(str).replace(/'/gi, '').replace(/"/gi, '');
 }
-},{"../user":"+QE3","./dispatcher":"bsac","../modules/methods":"+qXS","../modules/chat":"e1Zb","../modules/entity/user":"xF3w","../inventory":"4m5o","../../util/fractions":"Zeqt","../coffer":"sKID","../modules/entity/coffer":"R7v/","../modules/entity/rpNews":"wgLG","../vehicles":"pYYy","../stock":"MdNj","../houses":"buna","../modules/menu":"Aiz7","../apartments":"qIZj","../condo":"YoDO","../../util/mafiaData":"nT9M","../../util/sharedData":"bNis","../enums":"9ZRY","../../util/methods":"Z5QB","../modules/data":"5Edc","../business":"y5vZ"}],"iNNl":[function(require,module,exports) {
+},{"../user":"QE3B","./dispatcher":"bsac","../modules/methods":"qXSp","../modules/chat":"e1Zb","../modules/entity/user":"xF3w","../inventory":"m5ow","../../util/fractions":"Zeqt","../coffer":"sKID","../modules/entity/coffer":"R7vB","../modules/entity/rpNews":"wgLG","../vehicles":"pYYy","../stock":"MdNj","../houses":"buna","../modules/menu":"Aiz7","../apartments":"qIZj","../condo":"YoDO","../../util/mafiaData":"nT9M","../../util/sharedData":"bNis","../enums":"ZRYf","../../util/methods":"Z5QB","../modules/data":"Edcz","../business":"y5vZ"}],"iNNl":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10095,7 +10092,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.customChest = customChest = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_custom_chests"
 })], customChest);
-},{"../customchest":"7s+a"}],"txRo":[function(require,module,exports) {
+},{"../customchest":"sAsv"}],"txRo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10153,11 +10150,11 @@ setTimeout(() => {
 }, 100);
 mp.events.add('playerJoin', player => {
   const resip = player.ip == "127.0.0.1" ? "127.0.0.1" : ip_address;
-  let port = _methods.methods.isTestServer() ? 3400 : 21428;
-  player.call('web:browsers:urls', [[`http://${resip}:3400/web/index.html${_newrage.RAGE_BETA ? '?ragebeta' : ''}`, `http://${resip}:3400/menu/index.html${_newrage.RAGE_BETA ? '?ragebeta' : ''}`, `http://${resip}:3400/phone/phone.html/`, `http://${resip}:3400/web/custom_sound.html${_newrage.RAGE_BETA ? '?ragebeta' : ''}`, `http://${resip}:3400/minigames/`]]);
+  let port = _methods.methods.isTestServer() ? 3400 : 80;
+  player.call('web:browsers:urls', [[`http://${resip}:${port}/web/index.html${_newrage.RAGE_BETA ? '?ragebeta' : ''}`, `http://${resip}:${port}/menu/index.html${_newrage.RAGE_BETA ? '?ragebeta' : ''}`, `http://${resip}:${port}/phone/phone.html${_newrage.RAGE_BETA ? '?ragebeta' : ''}`, `http://${resip}:${port}/web/custom_sound.html${_newrage.RAGE_BETA ? '?ragebeta' : ''}`, `http://${resip}:${port}/minigames/`]]);
 });
 app.listen(3400, function () {});
-},{"./modules/methods":"+qXS","./user":"+QE3","./items":"nuVl","../util/newrage":"mgLX"}],"HDmV":[function(require,module,exports) {
+},{"./modules/methods":"qXSp","./user":"QE3B","./items":"nuVl","../util/newrage":"mgLX"}],"HDmV":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10307,7 +10304,7 @@ exports.moneyChestEntity = moneyChestEntity = __decorate([(0, _sequelizeTypescri
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.moneyChest = exports.loadMoneyChests = exports.moneyChests = void 0;
+exports.moneyChests = exports.moneyChest = exports.loadMoneyChests = void 0;
 
 var _methods = require("./methods");
 
@@ -10331,28 +10328,6 @@ const loadMoneyChests = () => {
 exports.loadMoneyChests = loadMoneyChests;
 
 class moneyChest {
-  save() {
-    _moneyChest.moneyChestEntity.update({
-      money: this.money,
-      position: this.position,
-      dimension: this.dimension,
-      fraction: this.fraction,
-      log: this.log.slice(1).slice(-300)
-    }, {
-      where: {
-        id: this.id
-      }
-    });
-  }
-
-  logWrite(who, text) {
-    this.log.push({
-      who,
-      text
-    });
-    this.save();
-  }
-
   constructor(id, position, money, fraction, log, dimension) {
     this.id = id;
     this.position = position;
@@ -10459,6 +10434,28 @@ class moneyChest {
     }, 1, this.dimension);
   }
 
+  save() {
+    _moneyChest.moneyChestEntity.update({
+      money: this.money,
+      position: this.position,
+      dimension: this.dimension,
+      fraction: this.fraction,
+      log: this.log.slice(1).slice(-300)
+    }, {
+      where: {
+        id: this.id
+      }
+    });
+  }
+
+  logWrite(who, text) {
+    this.log.push({
+      who,
+      text
+    });
+    this.save();
+  }
+
   get position() {
     return this.positiondata;
   }
@@ -10489,13 +10486,13 @@ mp.events.add("playerArrested", player => {
     player.notify("~r~Вы потеряли сумку с деньгами");
   }
 });
-},{"./methods":"+qXS","./menu":"Aiz7","../user":"+QE3","./entity/moneyChest":"vWYJ"}],"cDXP":[function(require,module,exports) {
+},{"./methods":"qXSp","./menu":"Aiz7","../user":"QE3B","./entity/moneyChest":"vWYJ"}],"cDXP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.gangzones = exports.reloadGangWarZones = exports.defenceCounter = exports.attackCounter = exports.attackBlock = exports.attackTerBlock = exports.attackList = exports.gangRespPosition = exports.baseDzone = exports.moneyPerTer = void 0;
+exports.reloadGangWarZones = exports.moneyPerTer = exports.gangzones = exports.gangRespPosition = exports.defenceCounter = exports.baseDzone = exports.attackTerBlock = exports.attackList = exports.attackCounter = exports.attackBlock = void 0;
 
 var _web = require("../web");
 
@@ -10513,9 +10510,9 @@ var _methods = require("../modules/methods");
 
 var _moneyChest = require("./moneyChest");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -10797,7 +10794,7 @@ function attack(ter, attack) {
 
     if (item) {
       if (item.timer > 0) {
-        attackList.set(terid, _objectSpread({}, item, {
+        attackList.set(terid, _objectSpread(_objectSpread({}, item), {}, {
           timer: item.timer - 1
         }));
       } else {
@@ -10979,7 +10976,7 @@ setInterval(() => {
     });
   }
 }, 30000);
-},{"../web":"txRo","../../declaration/gangwar":"HDmV","./entity/gangWarsZone":"PCk1","../../util/fractions":"Zeqt","../user":"+QE3","./menu":"Aiz7","../modules/methods":"+qXS","./moneyChest":"HIeq"}],"WakH":[function(require,module,exports) {
+},{"../web":"txRo","../../declaration/gangwar":"HDmV","./entity/gangWarsZone":"PCk1","../../util/fractions":"Zeqt","../user":"QE3B","./menu":"Aiz7","../modules/methods":"qXSp","./moneyChest":"HIeq"}],"WakH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11038,7 +11035,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.logFractionGunEntity = logFractionGunEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_log_fraction_gun"
 })], logFractionGunEntity);
-},{}],"7s+a":[function(require,module,exports) {
+},{}],"sAsv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11729,7 +11726,7 @@ const chest = {
   }
 };
 exports.chest = chest;
-},{"./methods":"+qXS","../inventory":"4m5o","./menu":"Aiz7","../user":"+QE3","../items":"nuVl","../../util/fractions":"Zeqt","./entity/customChest":"iNNl","./gangwar":"cDXP","./chest":"+eVh","../../util/equip":"21EW","../../util/inventory":"Jhu1","./entity/logFractionGunEntity":"WakH","./admin":"s4Xg"}],"89kw":[function(require,module,exports) {
+},{"./methods":"qXSp","../inventory":"m5ow","./menu":"Aiz7","../user":"QE3B","../items":"nuVl","../../util/fractions":"Zeqt","./entity/customChest":"iNNl","./gangwar":"cDXP","./chest":"eVha","../../util/equip":"EWWr","../../util/inventory":"Jhu1","./entity/logFractionGunEntity":"WakH","./admin":"s4Xg"}],"kwVd":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11827,13 +11824,13 @@ const weaponsUtil = {
   }
 };
 exports.weaponsUtil = weaponsUtil;
-},{}],"4m5o":[function(require,module,exports) {
+},{}],"m5ow":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.inventory = exports.itemsDB = void 0;
+exports.itemsDB = exports.inventory = void 0;
 
 var _methods = require("./modules/methods");
 
@@ -14716,7 +14713,7 @@ setTimeout(() => {
     m.open();
   });
 }, 1000);
-},{"./modules/methods":"+qXS","./modules/chat":"e1Zb","./user":"+QE3","./enums":"9ZRY","./items":"nuVl","./vehicles":"pYYy","./weapons":"YeMF","./modules/entity/inventory":"bqq+","../util/inventory":"Jhu1","./modules/vehicleInfo":"f3Ap","../util/sharedData":"bNis","./modules/menu":"Aiz7","./stock":"MdNj","./coffer":"sKID","./managers/tablet.events":"Fdqv","./modules/customchest":"7s+a","../util/fractions":"Zeqt","../util/methods":"Z5QB","../util/weapons":"89kw","./houses":"buna"}],"rfaj":[function(require,module,exports) {
+},{"./modules/methods":"qXSp","./modules/chat":"e1Zb","./user":"QE3B","./enums":"ZRYf","./items":"nuVl","./vehicles":"pYYy","./weapons":"YeMF","./modules/entity/inventory":"bqqA","../util/inventory":"Jhu1","./modules/vehicleInfo":"f3Ap","../util/sharedData":"bNis","./modules/menu":"Aiz7","./stock":"MdNj","./coffer":"sKID","./managers/tablet.events":"Fdqv","./modules/customchest":"sAsv","../util/fractions":"Zeqt","../util/methods":"Z5QB","../util/weapons":"kwVd","./houses":"buna"}],"rfaj":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14788,14 +14785,15 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.weaponChest = weaponChest = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_weapon_chests"
 })], weaponChest);
-},{}],"+eVh":[function(require,module,exports) {
+},{}],"eVha":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.newChest = exports.maxShipWeight = exports.initChests = exports.illegalList = exports.baseItems = void 0;
 exports.newOrder = newOrder;
-exports.newChest = exports.baseItems = exports.initChests = exports.illegalList = exports.order = exports.oldChestPool = exports.maxShipWeight = void 0;
+exports.order = exports.oldChestPool = void 0;
 
 var _methods = require("./methods");
 
@@ -14813,9 +14811,9 @@ var _dispatcher = require("../managers/dispatcher");
 
 var _weaponChest = require("./entity/weaponChest");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -15019,14 +15017,6 @@ setTimeout(() => {
 }, 2000);
 
 class Chest {
-  static get(id) {
-    return chests.get(id);
-  }
-
-  static getDescItem(model) {
-    return _equip.EquipDataItems.find(item => item.model == model);
-  }
-
   constructor(pos, name, fractionId, rank, itemss, maxSize = 1000, id, dimension) {
     this.personLimit = new Map();
     this.dimension = dimension;
@@ -15282,6 +15272,14 @@ class Chest {
 
       m.open();
     }, 1, this.dimension);
+  }
+
+  static get(id) {
+    return chests.get(id);
+  }
+
+  static getDescItem(model) {
+    return _equip.EquipDataItems.find(item => item.model == model);
   }
 
   delete() {
@@ -15799,7 +15797,7 @@ const newChest = (name, fractionId, pos, size, items, id, dimension) => {
 };
 
 exports.newChest = newChest;
-},{"./methods":"+qXS","../user":"+QE3","../../util/equip":"21EW","../inventory":"4m5o","./menu":"Aiz7","../items":"nuVl","../managers/dispatcher":"bsac","./entity/weaponChest":"rfaj"}],"8K4B":[function(require,module,exports) {
+},{"./methods":"qXSp","../user":"QE3B","../../util/equip":"EWWr","../inventory":"m5ow","./menu":"Aiz7","../items":"nuVl","../managers/dispatcher":"bsac","./entity/weaponChest":"rfaj"}],"K4Bd":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15873,7 +15871,7 @@ exports.garderobEntity = garderobEntity = __decorate([(0, _sequelizeTypescript.T
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.garderobPool = exports.dressRoom = exports.loadGarderobs = void 0;
+exports.loadGarderobs = exports.garderobPool = exports.dressRoom = void 0;
 
 var _methods = require("./methods");
 
@@ -15896,36 +15894,6 @@ const loadGarderobs = () => {
 exports.loadGarderobs = loadGarderobs;
 
 class dressRoom {
-  save() {
-    _garderob.garderobEntity.update({
-      fraction: this.fraction,
-      position: this.position,
-      dresses: this.dresses
-    }, {
-      where: {
-        id: this.id
-      }
-    });
-  }
-
-  delete(player) {
-    if (!_user.user.isAdminNow(player, 6)) return player.notify("~r~Вы кто такой?");
-
-    _user.user.accept(player, "Вы уверены?", "~r~Удалить", "~g~Не удалять").then(status => {
-      if (!status) return;
-
-      _garderob.garderobEntity.destroy({
-        where: {
-          id: this.id
-        }
-      }).then(() => {
-        this.checkpoint.delete();
-        garderobPool.delete(this.id);
-        player.notify("~g~Больше данного гардероба не существует");
-      });
-    });
-  }
-
   constructor(id, fraction, position, dresses, dimension) {
     this.id = id;
     this.fraction = fraction;
@@ -16068,6 +16036,36 @@ class dressRoom {
     garderobPool.set(this.id, this);
   }
 
+  save() {
+    _garderob.garderobEntity.update({
+      fraction: this.fraction,
+      position: this.position,
+      dresses: this.dresses
+    }, {
+      where: {
+        id: this.id
+      }
+    });
+  }
+
+  delete(player) {
+    if (!_user.user.isAdminNow(player, 6)) return player.notify("~r~Вы кто такой?");
+
+    _user.user.accept(player, "Вы уверены?", "~r~Удалить", "~g~Не удалять").then(status => {
+      if (!status) return;
+
+      _garderob.garderobEntity.destroy({
+        where: {
+          id: this.id
+        }
+      }).then(() => {
+        this.checkpoint.delete();
+        garderobPool.delete(this.id);
+        player.notify("~g~Больше данного гардероба не существует");
+      });
+    });
+  }
+
   get position() {
     return this.positiondata;
   }
@@ -16091,7 +16089,7 @@ class dressRoom {
 exports.dressRoom = dressRoom;
 const garderobPool = new Map();
 exports.garderobPool = garderobPool;
-},{"./methods":"+qXS","./menu":"Aiz7","../user":"+QE3","./entity/garderob":"8K4B","../../util/fractions":"Zeqt"}],"waLt":[function(require,module,exports) {
+},{"./methods":"qXSp","./menu":"Aiz7","../user":"QE3B","./entity/garderob":"K4Bd","../../util/fractions":"Zeqt"}],"waLt":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16426,7 +16424,7 @@ mp.events.add('s:vSync:setSirenState', (player, vId, state) => {
     vSync.setSirenState(vId, state);
   }
 });
-},{"../vehicles":"pYYy","../modules/data":"5Edc","../modules/methods":"+qXS"}],"tmQn":[function(require,module,exports) {
+},{"../vehicles":"pYYy","../modules/data":"Edcz","../modules/methods":"qXSp"}],"tmQn":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16502,7 +16500,7 @@ exports.fractionGarageEntity = fractionGarageEntity = __decorate([(0, _sequelize
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.gangDeliverTarget = exports.gangDeliverSpawn = exports.gangDeliverCoolDown = exports.gangDeliverGosReward = exports.gangDeliverRewardFraction = exports.gangDeliverReward = exports.gangDeliverCost = void 0;
+exports.gangDeliverTarget = exports.gangDeliverSpawn = exports.gangDeliverRewardFraction = exports.gangDeliverReward = exports.gangDeliverGosReward = exports.gangDeliverCost = exports.gangDeliverCoolDown = void 0;
 const gangDeliverCost = 500;
 exports.gangDeliverCost = gangDeliverCost;
 const gangDeliverReward = 2500;
@@ -16637,7 +16635,7 @@ const gangDeliverTarget = [{
   z: 30
 }];
 exports.gangDeliverTarget = gangDeliverTarget;
-},{}],"5CvB":[function(require,module,exports) {
+},{}],"CvBw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16669,6 +16667,24 @@ let garagesList = new Map();
 let generateid = 0;
 
 class fractionGarage {
+  constructor(id, fraction, position, prefix, cars, dimension) {
+    this.generateid = 0;
+    this.dimension = dimension;
+    this.id = id;
+    this.fraction = fraction;
+    this.position = position;
+    this.prefix = prefix;
+    this.cars = cars;
+    this.amountmap = new Map();
+    this.cars.forEach(item => {
+      if (!this.amountmap.has(item.model)) this.amountmap.set(item.model, item.amount);else this.amountmap.set(item.model, this.amountmap.get(item.model) + item.amount);
+    });
+    this.checkpoint = _methods.methods.createDynamicCheckpoint(this.position, "Нажмите ~g~E~w~ чтобы открыть гараж " + _methods.methods.getFractionName(this.fraction), player => {
+      this.mainMenu(player);
+    }, 1, this.dimension);
+    garagesList.set(this.id, this);
+  }
+
   static get(id) {
     return garagesList.get(id);
   }
@@ -16923,24 +16939,6 @@ class fractionGarage {
     m.open();
   }
 
-  constructor(id, fraction, position, prefix, cars, dimension) {
-    this.generateid = 0;
-    this.dimension = dimension;
-    this.id = id;
-    this.fraction = fraction;
-    this.position = position;
-    this.prefix = prefix;
-    this.cars = cars;
-    this.amountmap = new Map();
-    this.cars.forEach(item => {
-      if (!this.amountmap.has(item.model)) this.amountmap.set(item.model, item.amount);else this.amountmap.set(item.model, this.amountmap.get(item.model) + item.amount);
-    });
-    this.checkpoint = _methods.methods.createDynamicCheckpoint(this.position, "Нажмите ~g~E~w~ чтобы открыть гараж " + _methods.methods.getFractionName(this.fraction), player => {
-      this.mainMenu(player);
-    }, 1, this.dimension);
-    garagesList.set(this.id, this);
-  }
-
   searchVeh(player) {
     if (!_user.user.isSubLeader(player) && !_user.user.isAdminNow(player, 6)) return player.notify("~r~У вас нет доступа, как вы тут оказались?");
 
@@ -17016,7 +17014,7 @@ mp.events.add("playerStartEnterVehicle", (player, vehicle, seat) => {
   if (seat) return;
   if (_user.user.getPlayerFraction(player) != vehicle.fraction_id) _vSync.vSync.setEngineState(vehicle, false);
 });
-},{"./methods":"+qXS","./menu":"Aiz7","./vehicleInfo":"f3Ap","../vehicles":"pYYy","../managers/vSync":"waLt","../user":"+QE3","./entity/fractionGarage":"tmQn","../../util/gang.deliver":"kfmD","../../util/fractions":"Zeqt","../coffer":"sKID"}],"wJlv":[function(require,module,exports) {
+},{"./methods":"qXSp","./menu":"Aiz7","./vehicleInfo":"f3Ap","../vehicles":"pYYy","../managers/vSync":"waLt","../user":"QE3B","./entity/fractionGarage":"tmQn","../../util/gang.deliver":"kfmD","../../util/fractions":"Zeqt","../coffer":"sKID"}],"wJlv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17051,7 +17049,7 @@ let http = _http.default.createServer();
 
 let ip_address = _ip.default.address();
 
-const socketPort = 1222;
+const socketPort = 3400;
 exports.socketPort = socketPort;
 http.listen(socketPort, function () {
   console.log(`listening on *: ${socketPort}`);
@@ -17192,7 +17190,7 @@ function socketInit(player, advanced = false) {
 
   _methods.methods.saveLog('socket', `${player.name} call web:socket with ${[socketPort, ip_address, player.socketKey, advanced].join(' | ')}`);
 }
-},{"./modules/methods":"+qXS","./modules/chat":"e1Zb","./user":"+QE3"}],"UcH2":[function(require,module,exports) {
+},{"./modules/methods":"qXSp","./modules/chat":"e1Zb","./user":"QE3B"}],"UcH2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17295,7 +17293,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.vehicleBoosterEntity = vehicleBoosterEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_vehicle_booster"
 })], vehicleBoosterEntity);
-},{}],"3kxR":[function(require,module,exports) {
+},{}],"kxRx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17340,7 +17338,7 @@ setTimeout(() => {
     }
   }, 60000);
 }, 60000 * 60 * 5);
-},{"../modules/methods":"+qXS","../user":"+QE3"}],"GoOy":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../user":"QE3B"}],"GoOy":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17383,7 +17381,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.whiteListTestEntity = whiteListTestEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_users_test_whitelist"
 })], whiteListTestEntity);
-},{}],"H/Cq":[function(require,module,exports) {
+},{}],"HCq8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17435,7 +17433,6 @@ const whitelist = {
 };
 exports.whitelist = whitelist;
 mp.events.add('server:login:success:after', player => {
-  return true;
   if (!_methods.methods.isTestServer()) return true;
   if (whitelist.list.includes(player.socialClub.toLowerCase()) || player.ip == "127.0.0.1") return true;
   setTimeout(() => {
@@ -17450,7 +17447,7 @@ mp.events.add('server:login:success:after', player => {
     _user.user.kick(player, 'У вас нет доступа к тестовому серверу');
   }, 5000);
 });
-},{"./entity/whiteListTest":"GoOy","./methods":"+qXS","../user":"+QE3"}],"ES5W":[function(require,module,exports) {
+},{"./entity/whiteListTest":"GoOy","./methods":"qXSp","../user":"QE3B"}],"ES5W":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17458,18 +17455,18 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.tempConfigs = void 0;
 const tempConfigs = {
-  paydayx2: "X2 payday",
-  jobx2: "X2 job",
-  agex2: "Возраст X2",
-  agex2new: "Возраст X2 новичкам",
-  gosx2: "Надбавка гос X2",
-  donatex2: "Оповещение о X2 донатах",
-  donatex3: "Оповещение о X3 донатах",
-  fiveAndTenBonus: "Бонус за 5 и 10 часов онлайна",
-  logs: "Новая система логов",
-  cofferbonus: "Автопополнение казны",
-  to20: "Оповещение о награде за топ20",
-  chestorders: "Поставки оружия в фракциях"
+  paydayx2: false,
+  jobx2: false,
+  agex2: false,
+  agex2new: false,
+  gosx2: false,
+  donatex2: false,
+  donatex3: false,
+  fiveAndTenBonus: false,
+  logs: false,
+  cofferbonus: false,
+  to20: false,
+  chestorders: false
 };
 exports.tempConfigs = tempConfigs;
 },{}],"u9lD":[function(require,module,exports) {
@@ -17478,7 +17475,7 @@ exports.tempConfigs = tempConfigs;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.promocodeEntity = exports.promocodeUsingEntity = void 0;
+exports.promocodeUsingEntity = exports.promocodeEntity = void 0;
 
 var _sequelizeTypescript = require("sequelize-typescript");
 
@@ -17582,7 +17579,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.npc_dialog = exports.npc = exports.npcDialog = void 0;
+exports.npc_dialog = exports.npcDialog = exports.npc = void 0;
 
 var _user = require("../user");
 
@@ -17727,14 +17724,15 @@ mp.events.register("dialog:answer", (player, id, answerId) => {
   if (!asks.has(id)) return npc_dialog.close(player);
   asks.get(id)(answerId);
 });
-},{"../user":"+QE3","./methods":"+qXS"}],"s4Xg":[function(require,module,exports) {
+},{"../user":"QE3B","./methods":"qXSp"}],"s4Xg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.isRestarting = exports.customParams = void 0;
 exports.restartProtocol = restartProtocol;
-exports.userPropertyEdit = exports.isRestarting = exports.setCustomParams = exports.customParams = void 0;
+exports.userPropertyEdit = exports.setCustomParams = void 0;
 
 var _deathReasonList = _interopRequireDefault(require("../config/deathReasonList.json"));
 
@@ -17830,9 +17828,9 @@ var _npc = require("./npc");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -19492,7 +19490,7 @@ function mainMenu(player) {
         });
       }
 
-      if (_user.user.getAdminLevel(player) == 6) {
+      if (_user.user.getAdminLevel(player) >= 6) {
         m.newItem({
           name: "Socket.IO",
           onpress: () => {
@@ -19584,7 +19582,7 @@ function mainMenu(player) {
             customEnable(player);
           }
         });
-        if (["XanderWP", "StrafeElite"].includes(player.socialClub)) m.newItem({
+        if (["flyingthegame"].includes(player.socialClub)) m.newItem({
           name: "~g~Смена пароля учётной записи",
           desc: "Введите новый пароль и перезапишите в БД",
           onpress: () => {
@@ -19645,7 +19643,7 @@ function mainMenu(player) {
           }
         });
 
-        if (_methods.methods.isTestServer()) {
+        if (_methods.methods.isTestServer() && _user.user.getAdminLevel(player) >= 6) {
           m.newItem({
             name: "~r~Заливка обновления",
             desc: "Выбрать что и как сделать",
@@ -20020,7 +20018,7 @@ async function gangwarzone(player, zone) {
         let name = await _menu.menu.input(player, "Название");
         if (!name) return gangwarzone(player, zone);
 
-        let newcoord = _objectSpread({}, player.position, {
+        let newcoord = _objectSpread(_objectSpread({}, player.position), {}, {
           d: _gangwar.baseDzone
         });
 
@@ -21626,7 +21624,7 @@ const userPropertyEdit = async (player, id) => {
 };
 
 exports.userPropertyEdit = userPropertyEdit;
-},{"../config/deathReasonList.json":"GEp2","../user":"+QE3","./menu":"Aiz7","../vehicles":"pYYy","../modules/methods":"+qXS","./chat":"e1Zb","../managers/weather":"uehX","../business":"y5vZ","./chest":"+eVh","../managers/parking":"ipvo","../enums":"9ZRY","./vehicleInfo":"f3Ap","../business/autosalon":"JYAF","./garderob":"IU8T","./fraction.vehicles.spawn":"5CvB","./entity/garderob":"8K4B","./entity/moneyChest":"vWYJ","./moneyChest":"HIeq","./entity/user":"xF3w","../socket":"wJlv","./entity/blackList":"UcH2","./entity/vehicleBooster":"fCpW","./entity/business":"uUTa","../coffer":"sKID","../managers/restart":"3kxR","../../util/newrage":"mgLX","../../util/fractions":"Zeqt","./whitelist":"H/Cq","./entity/gangWarsZone":"PCk1","./gangwar":"cDXP","../modules/customchest":"7s+a","../inventory":"4m5o","../items":"nuVl","./entity/inventory":"bqq+","../../util/tempConfigs":"ES5W","./entity/promocodeUsing":"u9lD","./entity/carsModel":"pv82","../config/adminsTp":"gqKn","../../util/weapons":"89kw","./events":"d3wo","../promisehack":"r9A/","./npc":"jKJb"}],"sKID":[function(require,module,exports) {
+},{"../config/deathReasonList.json":"GEp2","../user":"QE3B","./menu":"Aiz7","../vehicles":"pYYy","../modules/methods":"qXSp","./chat":"e1Zb","../managers/weather":"uehX","../business":"y5vZ","./chest":"eVha","../managers/parking":"ipvo","../enums":"ZRYf","./vehicleInfo":"f3Ap","../business/autosalon":"JYAF","./garderob":"IU8T","./fraction.vehicles.spawn":"CvBw","./entity/garderob":"K4Bd","./entity/moneyChest":"vWYJ","./moneyChest":"HIeq","./entity/user":"xF3w","../socket":"wJlv","./entity/blackList":"UcH2","./entity/vehicleBooster":"fCpW","./entity/business":"uUTa","../coffer":"sKID","../managers/restart":"kxRx","../../util/newrage":"mgLX","../../util/fractions":"Zeqt","./whitelist":"HCq8","./entity/gangWarsZone":"PCk1","./gangwar":"cDXP","../modules/customchest":"sAsv","../inventory":"m5ow","../items":"nuVl","./entity/inventory":"bqqA","../../util/tempConfigs":"ES5W","./entity/promocodeUsing":"u9lD","./entity/carsModel":"pv82","../config/adminsTp":"gqKn","../../util/weapons":"kwVd","./events":"d3wo","../promisehack":"r9AO","./npc":"jKJb"}],"sKID":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21761,7 +21759,7 @@ setInterval(() => {
     coffer.addMoney(_methods.methods.getRandomInt(1000, 5000));
   }
 }, 60000);
-},{"./modules/data":"5Edc","./modules/methods":"+qXS","./modules/admin":"s4Xg","./modules/entity/coffer":"R7v/"}],"nyp7":[function(require,module,exports) {
+},{"./modules/data":"Edcz","./modules/methods":"qXSp","./modules/admin":"s4Xg","./modules/entity/coffer":"R7vB"}],"nyp7":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21830,13 +21828,13 @@ let fuel = {
   }
 };
 exports.fuel = fuel;
-},{"../business":"y5vZ","../modules/methods":"+qXS"}],"iKyq":[function(require,module,exports) {
+},{"../business":"y5vZ","../modules/methods":"qXSp"}],"iKyq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getVehicleVisualParams = exports.getVehicleParamName = exports.isPointInSalePosition = exports.vehicleSalePoints = exports.VEH_SELL_MIN_PERCENT = void 0;
+exports.vehicleSalePoints = exports.isPointInSalePosition = exports.getVehicleVisualParams = exports.getVehicleParamName = exports.VEH_SELL_MIN_PERCENT = void 0;
 const VEH_SELL_MIN_PERCENT = 10;
 exports.VEH_SELL_MIN_PERCENT = VEH_SELL_MIN_PERCENT;
 const vehicleSalePoints = [[{
@@ -22524,7 +22522,7 @@ exports.getVehicleVisualParams = getVehicleVisualParams;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.vehicles = exports.vehSalesShowChecks = exports.vehSalesPointsData = exports.offsetFrNew = exports.offsetFr = exports.vehicleOffset = void 0;
+exports.vehicles = exports.vehicleOffset = exports.vehSalesShowChecks = exports.vehSalesPointsData = exports.offsetFrNew = exports.offsetFr = void 0;
 
 var _data = require("./modules/data");
 
@@ -24611,7 +24609,7 @@ mp.events.add('server:vehicleFreeze', player => {
   if (!player.vehicle) return;
   player.vehicle.setVariable('freezePosition', !!!player.vehicle.getVariable('freezePosition'));
 });
-},{"./modules/data":"5Edc","./enums":"9ZRY","./user":"+QE3","./coffer":"sKID","./business/fuel":"nyp7","./modules/methods":"+qXS","./managers/vSync":"waLt","./modules/entity/vehicleBooster":"fCpW","./inventory":"4m5o","./modules/entity/carsModel":"pv82","../util/vehsell":"iKyq","./modules/menu":"Aiz7","./modules/vehicleInfo":"f3Ap"}],"e1Zb":[function(require,module,exports) {
+},{"./modules/data":"Edcz","./enums":"ZRYf","./user":"QE3B","./coffer":"sKID","./business/fuel":"nyp7","./modules/methods":"qXSp","./managers/vSync":"waLt","./modules/entity/vehicleBooster":"fCpW","./inventory":"m5ow","./modules/entity/carsModel":"pv82","../util/vehsell":"iKyq","./modules/menu":"Aiz7","./modules/vehicleInfo":"f3Ap"}],"e1Zb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25170,7 +25168,7 @@ let enabledSystem = {
   snowmangame: false
 };
 exports.enabledSystem = enabledSystem;
-},{"./methods":"+qXS","../user":"+QE3","../vehicles":"pYYy","../../util/methods":"Z5QB","../../util/vip":"8jh2","./menu":"Aiz7"}],"MvN0":[function(require,module,exports) {
+},{"./methods":"qXSp","../user":"QE3B","../vehicles":"pYYy","../../util/methods":"Z5QB","../../util/vip":"jh2U","./menu":"Aiz7"}],"MvN0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25643,7 +25641,7 @@ let bank = {
   }
 };
 exports.bank = bank;
-},{"../modules/methods":"+qXS","../business":"y5vZ","../user":"+QE3","../coffer":"sKID","../inventory":"4m5o","../modules/events":"d3wo","../modules/entity/user":"xF3w"}],"hGLC":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../business":"y5vZ","../user":"QE3B","../coffer":"sKID","../inventory":"m5ow","../modules/events":"d3wo","../modules/entity/user":"xF3w"}],"hGLC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25743,13 +25741,13 @@ mp.events.add('holidayPickups:server', (player, index) => {
 mp.events.add('playerJoin', player => {
   player.call('3vv', ["[]"]);
 });
-},{"../user":"+QE3"}],"2CFs":[function(require,module,exports) {
+},{"../user":"QE3B"}],"CFsv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getQuest = exports.questData = void 0;
+exports.questData = exports.getQuest = void 0;
 
 var _user = require("../user");
 
@@ -25928,7 +25926,7 @@ const getQuest = name => {
 };
 
 exports.getQuest = getQuest;
-},{"../user":"+QE3","../inventory":"4m5o","../../util/level":"MpJF","../managers/pickup.gift":"Sogq"}],"mH+j":[function(require,module,exports) {
+},{"../user":"QE3B","../inventory":"m5ow","../../util/level":"MpJF","../managers/pickup.gift":"Sogq"}],"mHJx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26103,7 +26101,7 @@ function writelogs() {
 
   listLogsInserts = [];
 }
-},{"./user":"+QE3","./modules/methods":"+qXS","./modules/entity/logEntity":"mH+j","./modules/admin":"s4Xg"}],"0NOU":[function(require,module,exports) {
+},{"./user":"QE3B","./modules/methods":"qXSp","./modules/entity/logEntity":"mHJx","./modules/admin":"s4Xg"}],"NOUi":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26284,7 +26282,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.userNotifyEntity = userNotifyEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_users_notify"
 })], userNotifyEntity);
-},{"../methods":"+qXS"}],"tSli":[function(require,module,exports) {
+},{"../methods":"qXSp"}],"tSli":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26542,7 +26540,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.promocodeTopListEntity = promocodeTopListEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_promocode_top_list"
 })], promocodeTopListEntity);
-},{}],"+ir2":[function(require,module,exports) {
+},{}],"ir2T":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26551,7 +26549,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.hiddenIdMask = void 0;
 const hiddenIdMask = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180];
 exports.hiddenIdMask = hiddenIdMask;
-},{}],"7kYs":[function(require,module,exports) {
+},{}],"kYse":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26565,9 +26563,9 @@ var _fs = _interopRequireDefault(require("fs"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -26658,7 +26656,7 @@ class NoSQLbase {
   }
 
   findOne(param) {
-    let data = this.find(_objectSpread({}, param, {
+    let data = this.find(_objectSpread(_objectSpread({}, param), {}, {
       limit: 1
     }));
     if (data.length > 0) return data[0];else undefined;
@@ -26699,15 +26697,15 @@ Object.defineProperty(exports, "__esModule", {
 exports.dayTopReward = void 0;
 const dayTopReward = [100000, 95000, 90000, 85000, 80000, 75000, 70000, 65000, 60000, 55000, 50000, 45000, 40000, 35000, 30000, 25000, 20000, 15000, 10000, 5000];
 exports.dayTopReward = dayTopReward;
-},{}],"+QE3":[function(require,module,exports) {
+},{}],"QE3B":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.banUser = banUser;
+exports.user = exports.saveNoSQLplayerData = void 0;
 exports.workUser = workUser;
-exports.saveNoSQLplayerData = exports.user = void 0;
 
 var _deathReasonList = _interopRequireDefault(require("./config/deathReasonList.json"));
 
@@ -26807,13 +26805,15 @@ var _nosql = require("./modules/nosql");
 
 var _progress = require("../util/progress.reward");
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -27935,7 +27935,7 @@ let user = {
     if (player.spectateTarget) return player.notify("Вы уже за кем то наблюдаете");
     if (player == target) return player.notify("Следить самим за собой?");
     player.spectateTarget = target;
-    player.spectatePosition = _objectSpread({}, player.position, {
+    player.spectatePosition = _objectSpread(_objectSpread({}, player.position), {}, {
       d: player.dimension,
       h: player.heading
     });
@@ -32138,7 +32138,7 @@ const saveNoSQLplayerData = () => {
 };
 
 exports.saveNoSQLplayerData = saveNoSQLplayerData;
-},{"./config/deathReasonList.json":"GEp2","./modules/methods":"+qXS","./modules/chat":"e1Zb","./modules/admin":"s4Xg","./enums":"9ZRY","./condo":"YoDO","./houses":"buna","./stock":"MdNj","./apartments":"qIZj","./vehicles":"pYYy","./managers/dispatcher":"bsac","./managers/weather":"uehX","./coffer":"sKID","./business":"y5vZ","./modules/data":"5Edc","./business/bank":"MvN0","./modules/menu":"Aiz7","./items":"nuVl","./inventory":"4m5o","./modules/entity/user":"xF3w","./modules/entity/banList":"hGLC","./config/quests":"2CFs","./log":"MNUA","../util/level":"MpJF","./modules/entity/warns":"0NOU","../util/fractions":"Zeqt","../util/voice":"SYvm","../util/newrage":"mgLX","../util/weapons":"89kw","./modules/gangwar":"cDXP","./modules/moneyChest":"HIeq","./modules/events":"d3wo","../util/mafiaData":"nT9M","../util/vip":"8jh2","../util/methods":"Z5QB","./modules/entity/userNotifyEntity":"Q3Rn","./modules/entity/carsModel":"pv82","./modules/entity/logReferrerEntity":"tSli","./modules/entity/logAuthEntity":"T8aA","./modules/entity/userDatingEntity":"Soei","./modules/entity/logPlayerEntity":"JLGa","./modules/entity/promocodeTopEntity":"ixsW","./modules/entity/blackList":"UcH2","./modules/customchest":"7s+a","../util/mask":"+ir2","./modules/whitelist":"H/Cq","./modules/nosql":"7kYs","../util/progress.reward":"ErXz"}],"Lio2":[function(require,module,exports) {
+},{"./config/deathReasonList.json":"GEp2","./modules/methods":"qXSp","./modules/chat":"e1Zb","./modules/admin":"s4Xg","./enums":"ZRYf","./condo":"YoDO","./houses":"buna","./stock":"MdNj","./apartments":"qIZj","./vehicles":"pYYy","./managers/dispatcher":"bsac","./managers/weather":"uehX","./coffer":"sKID","./business":"y5vZ","./modules/data":"Edcz","./business/bank":"MvN0","./modules/menu":"Aiz7","./items":"nuVl","./inventory":"m5ow","./modules/entity/user":"xF3w","./modules/entity/banList":"hGLC","./config/quests":"CFsv","./log":"MNUA","../util/level":"MpJF","./modules/entity/warns":"NOUi","../util/fractions":"Zeqt","../util/voice":"SYvm","../util/newrage":"mgLX","../util/weapons":"kwVd","./modules/gangwar":"cDXP","./modules/moneyChest":"HIeq","./modules/events":"d3wo","../util/mafiaData":"nT9M","../util/vip":"jh2U","../util/methods":"Z5QB","./modules/entity/userNotifyEntity":"Q3Rn","./modules/entity/carsModel":"pv82","./modules/entity/logReferrerEntity":"tSli","./modules/entity/logAuthEntity":"T8aA","./modules/entity/userDatingEntity":"Soei","./modules/entity/logPlayerEntity":"JLGa","./modules/entity/promocodeTopEntity":"ixsW","./modules/entity/blackList":"UcH2","./modules/customchest":"sAsv","../util/mask":"ir2T","./modules/whitelist":"HCq8","./modules/nosql":"kYse","../util/progress.reward":"ErXz"}],"Lio2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32483,7 +32483,7 @@ let cloth = {
   }
 };
 exports.cloth = cloth;
-},{"../enums":"9ZRY","../modules/methods":"+qXS","../user":"+QE3","../business":"y5vZ"}],"aeoE":[function(require,module,exports) {
+},{"../enums":"ZRYf","../modules/methods":"qXSp","../user":"QE3B","../business":"y5vZ"}],"aeoE":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32929,7 +32929,7 @@ let shop = {
   }
 };
 exports.shop = shop;
-},{"../modules/methods":"+qXS","../business":"y5vZ","../user":"+QE3","../items":"nuVl","../inventory":"4m5o","../modules/pickups":"xTdX","../modules/menu":"Aiz7","../../util/loto":"aeoE"}],"bktO":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../business":"y5vZ","../user":"QE3B","../items":"nuVl","../inventory":"m5ow","../modules/pickups":"xTdX","../modules/menu":"Aiz7","../../util/loto":"aeoE"}],"bktO":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32985,7 +32985,7 @@ let barberShop = {
   }
 };
 exports.barberShop = barberShop;
-},{"../modules/methods":"+qXS","../user":"+QE3"}],"uLEY":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../user":"QE3B"}],"uLEY":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33047,7 +33047,7 @@ let licenseCenter = {
   }
 };
 exports.licenseCenter = licenseCenter;
-},{"../modules/methods":"+qXS","../modules/pickups":"xTdX","../coffer":"sKID","../user":"+QE3"}],"G8F2":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../modules/pickups":"xTdX","../coffer":"sKID","../user":"QE3B"}],"G8F2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33194,7 +33194,7 @@ let rent = {
   }
 };
 exports.rent = rent;
-},{"../modules/methods":"+qXS","../business":"y5vZ","../user":"+QE3","../vehicles":"pYYy","../../util/newrage":"mgLX"}],"1/8Y":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../business":"y5vZ","../user":"QE3B","../vehicles":"pYYy","../../util/newrage":"mgLX"}],"Y0m3":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33315,7 +33315,7 @@ let gun = {
   }
 };
 exports.gun = gun;
-},{"../business":"y5vZ","../modules/methods":"+qXS","../user":"+QE3","../items":"nuVl","../inventory":"4m5o"}],"C62+":[function(require,module,exports) {
+},{"../business":"y5vZ","../modules/methods":"qXSp","../user":"QE3B","../items":"nuVl","../inventory":"m5ow"}],"C62B":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33878,7 +33878,7 @@ let lsc = {
   }
 };
 exports.lsc = lsc;
-},{"../vehicles":"pYYy","../user":"+QE3","../business":"y5vZ","../modules/methods":"+qXS","../modules/entity/carsModel":"pv82","../inventory":"4m5o"}],"ZO2Y":[function(require,module,exports) {
+},{"../vehicles":"pYYy","../user":"QE3B","../business":"y5vZ","../modules/methods":"qXSp","../modules/entity/carsModel":"pv82","../inventory":"m5ow"}],"ZO2Y":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33973,7 +33973,7 @@ let bar = {
   }
 };
 exports.bar = bar;
-},{"../modules/methods":"+qXS","../business":"y5vZ"}],"L23J":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../business":"y5vZ"}],"L23J":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34059,7 +34059,7 @@ let carWash = {
   }
 };
 exports.carWash = carWash;
-},{"../modules/methods":"+qXS","../business":"y5vZ","../managers/vSync":"waLt","../user":"+QE3"}],"Iy5w":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../business":"y5vZ","../managers/vSync":"waLt","../user":"QE3B"}],"Iy5w":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34539,7 +34539,7 @@ let tattoo = {
   }
 };
 exports.tattoo = tattoo;
-},{"../modules/methods":"+qXS","../business":"y5vZ","../user":"+QE3","../modules/menu":"Aiz7","../coffer":"sKID"}],"xTdX":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../business":"y5vZ","../user":"QE3B","../modules/menu":"Aiz7","../coffer":"sKID"}],"xTdX":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34990,7 +34990,7 @@ let pickups = {
   }
 };
 exports.pickups = pickups;
-},{"./methods":"+qXS","../user":"+QE3","../business/fuel":"nyp7","../business/cloth":"Lio2","../business/shop":"e2yF","../business/barberShop":"bktO","../business/bank":"MvN0","../business/licenseCenter":"uLEY","../business/rent":"G8F2","../business/gun":"1/8Y","../business/lsc":"C62+","../business/bar":"ZO2Y","../business/carWash":"L23J","../business/tattoo":"Iy5w","../business/autosalon":"JYAF"}],"iry/":[function(require,module,exports) {
+},{"./methods":"qXSp","../user":"QE3B","../business/fuel":"nyp7","../business/cloth":"Lio2","../business/shop":"e2yF","../business/barberShop":"bktO","../business/bank":"MvN0","../business/licenseCenter":"uLEY","../business/rent":"G8F2","../business/gun":"Y0m3","../business/lsc":"C62B","../business/bar":"ZO2Y","../business/carWash":"L23J","../business/tattoo":"Iy5w","../business/autosalon":"JYAF"}],"iryQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35049,13 +35049,13 @@ const getCompanyName = company => {
 };
 
 exports.getCompanyName = getCompanyName;
-},{}],"+qXS":[function(require,module,exports) {
+},{}],"qXSp":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.methods = exports.DynamicCheckpoint = exports.lastMessageLog = void 0;
+exports.methods = exports.lastMessageLog = exports.DynamicCheckpoint = void 0;
 
 var _fs = _interopRequireDefault(require("fs"));
 
@@ -36280,6 +36280,10 @@ let methods = {
       height
     });
     if (message != undefined) _data.Container.Set(999999, 'checkpointStaticLabel' + checkpointID, message);
+    mp.markers.new(1, new mp.Vector3(x, y, z), scale, {
+      color: color,
+      dimension: dimension
+    });
     return checkpointID;
   },
   digitFormat: function (number) {
@@ -36335,13 +36339,13 @@ let methods = {
     methods.createBlip(new mp.Vector3(1853.22, 3686.6796875, 33.2670), 60, 16, 0.8, 'Sheriff Department');
     methods.createBlip(new mp.Vector3(-138.8656, -634.0953, 168.8204), 535, 67, 0.8, 'Arcadius - Бизнес Центр');
     methods.createBlip(new mp.Vector3(-66.66476, -802.0474, 44.22729), 475, 59, 0.8, 'Государственный банк "Maze"');
-    methods.createBlip(new mp.Vector3(2523.98, -412.34, 94.12), 498, 0, 0.8, 'Офис FIB');
     methods.createBlip(new mp.Vector3(1830.489, 2603.093, 45.8891), 238, 0, 0.8, 'Федеральная тюрьма');
     methods.createBlip(new mp.Vector3(-546.04, -202.54, 38.23), 419, 0, 0.8, 'Здание правительства');
     methods.createBlip(new mp.Vector3(354.65, -595.92, 28.79), 489, 59, 0.8, 'Здание больницы LS');
     methods.createBlip(new mp.Vector3(46.947, -1753.859, 46.508), 78, 68, 0.4, 'Торговый центр MegaMoll');
     methods.createBlip(new mp.Vector3(-3544, 6135, 0), 68, 59, 0.8, 'Рыбалка запрещена');
     methods.createBlip(new mp.Vector3(4989, 1712, 0), 68, 59, 0.8, 'Рыбалка запрещена');
+    methods.createBlip(new mp.Vector3(-1337.255, -1277.948, 3.872962), 362, 0, 0.8, 'Магазин масок');
     methods.createBlip(new mp.Vector3(-1516.71, 851.46, 181.59), 78, 71, 0.8, 'Украинское посольство');
     methods.createBlip(new mp.Vector3(-1366.50, 56.68, 54.10), 78, 4, 0.8, 'Русское посольство');
     methods.createBlip(new mp.Vector3(-348.33, 178.55, 87.92), 78, 1, 0.8, 'Японское посольство');
@@ -38032,7 +38036,7 @@ function getDoubleMantissa(hexNumber) {
   binNumber = hex2bin(hexNumber);
   return binNumber.substr(12, 52);
 }
-},{"./data":"5Edc","../enums":"9ZRY","../user":"+QE3","../vehicles":"pYYy","../coffer":"sKID","./menu":"Aiz7","../inventory":"4m5o","../managers/dispatcher":"bsac","../../util/fractions":"Zeqt","./pickups":"xTdX","../houses":"buna","../condo":"YoDO","../stock":"MdNj","../apartments":"qIZj","../../util/newrage":"mgLX","../../util/loto":"aeoE","../../util/methods":"Z5QB","./entity/logFractionGunEntity":"WakH","./entity/user":"xF3w","../../util/company.names":"iry/","../../util/inventory":"Jhu1"}],"5Edc":[function(require,module,exports) {
+},{"./data":"Edcz","../enums":"ZRYf","../user":"QE3B","../vehicles":"pYYy","../coffer":"sKID","./menu":"Aiz7","../inventory":"m5ow","../managers/dispatcher":"bsac","../../util/fractions":"Zeqt","./pickups":"xTdX","../houses":"buna","../condo":"YoDO","../stock":"MdNj","../apartments":"qIZj","../../util/newrage":"mgLX","../../util/loto":"aeoE","../../util/methods":"Z5QB","./entity/logFractionGunEntity":"WakH","./entity/user":"xF3w","../../util/company.names":"iryQ","../../util/inventory":"Jhu1"}],"Edcz":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -38211,7 +38215,7 @@ class Container {
 
 exports.Container = Container;
 Container.protectKeys = [];
-},{"./methods":"+qXS"}],"K9Zo":[function(require,module,exports) {
+},{"./methods":"qXSp"}],"K9Zo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38300,7 +38304,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.phoneSMSEntity = phoneSMSEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_phone_sms"
 })], phoneSMSEntity);
-},{}],"1Gt5":[function(require,module,exports) {
+},{}],"Gt5n":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38544,7 +38548,7 @@ let phone = {
   }
 };
 exports.phone = phone;
-},{"./modules/methods":"+qXS","./managers/weather":"uehX","./user":"+QE3","./modules/entity/phone":"K9Zo"}],"dIe4":[function(require,module,exports) {
+},{"./modules/methods":"qXSp","./managers/weather":"uehX","./user":"QE3B","./modules/entity/phone":"K9Zo"}],"dIe4":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38609,12 +38613,12 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.rpInvaderAdEntity = rpInvaderAdEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_rp_invader_ad"
 })], rpInvaderAdEntity);
-},{}],"K+RH":[function(require,module,exports) {
+},{}],"KRHF":[function(require,module,exports) {
 module.exports = {
   "host": "127.0.0.1",
   "db_user": "root",
   "password": "",
-  "database": "diamond_test",
+  "database": "diamond",
   "port": 3306
 };
 },{}],"ocv0":[function(require,module,exports) {
@@ -38665,7 +38669,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.shootingRecordsEntity = shootingRecordsEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_shooting_records"
 })], shootingRecordsEntity);
-},{}],"9Pud":[function(require,module,exports) {
+},{}],"Pudb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38825,7 +38829,7 @@ __decorate([(0, _sequelizeTypescript.Column)({
 exports.mafiaWarEntity = mafiaWarEntity = __decorate([(0, _sequelizeTypescript.Table)({
   modelName: "pAFk3qiAgG1_mafia_war"
 })], mafiaWarEntity);
-},{}],"1s1k":[function(require,module,exports) {
+},{}],"s1kb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39093,7 +39097,7 @@ exports.tradeLogEntity = tradeLogEntity = __decorate([(0, _sequelizeTypescript.T
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sequelizeInit = exports.mysqlpool = exports.sequelize = void 0;
+exports.sequelizeInit = exports.sequelize = exports.mysqlpool = void 0;
 
 var _sequelizeTypescript = require("sequelize-typescript");
 
@@ -39249,7 +39253,7 @@ const sequelizeInit = () => {
 };
 
 exports.sequelizeInit = sequelizeInit;
-},{"../config/mysql.json":"K+RH","./methods":"+qXS","./entity/weaponChest":"rfaj","./entity/garderob":"8K4B","./entity/moneyChest":"vWYJ","./entity/user":"xF3w","./entity/inventory":"bqq+","./entity/fractionGarage":"tmQn","./entity/banList":"hGLC","./entity/business":"uUTa","./entity/blackList":"UcH2","./entity/logEntity":"mH+j","./entity/vehicleBooster":"fCpW","./entity/warns":"0NOU","./entity/coffer":"R7v/","./entity/rpNews":"wgLG","./entity/shooting":"ocv0","./entity/whiteListTest":"GoOy","./entity/gangWarsZone":"PCk1","./entity/customChest":"iNNl","./entity/promocodeUsing":"u9lD","./entity/userNotifyEntity":"Q3Rn","./entity/carsModel":"pv82","./entity/eventToServer":"9Pud","./entity/monitoringEntity":"hvel","./entity/userDatingEntity":"Soei","./entity/logPlayerEntity":"JLGa","./entity/apartmentEntity":"K5GH","./entity/condoEntity":"9J/Z","./entity/housesEntity":"kvtc","./entity/phone":"K9Zo","./entity/stockEntity":"oqg0","./entity/logReferrerEntity":"tSli","./entity/logAuthEntity":"T8aA","./entity/mafiaWarEntity":"GUii","./entity/parkPlaceEntity":"/BQ3","./entity/carRent":"wd0+","./entity/autosalonPercent":"qqav","./entity/autosalonModels":"SdUa","./entity/rpInvaderAdEntity":"dIe4","./entity/daynightEntity":"71w9","./entity/auctionSettingsEntity":"1s1k","./entity/auctionEntity":"fQUH","./entity/promocodeTopEntity":"ixsW","./entity/logFractionGunEntity":"WakH","./entity/vehInfoEntity":"1Ogp","./entity/raceCfgEntity":"ZMA7","./entity/tradeLogEntity":"zzFV"}],"PN4J":[function(require,module,exports) {
+},{"../config/mysql.json":"KRHF","./methods":"qXSp","./entity/weaponChest":"rfaj","./entity/garderob":"K4Bd","./entity/moneyChest":"vWYJ","./entity/user":"xF3w","./entity/inventory":"bqqA","./entity/fractionGarage":"tmQn","./entity/banList":"hGLC","./entity/business":"uUTa","./entity/blackList":"UcH2","./entity/logEntity":"mHJx","./entity/vehicleBooster":"fCpW","./entity/warns":"NOUi","./entity/coffer":"R7vB","./entity/rpNews":"wgLG","./entity/shooting":"ocv0","./entity/whiteListTest":"GoOy","./entity/gangWarsZone":"PCk1","./entity/customChest":"iNNl","./entity/promocodeUsing":"u9lD","./entity/userNotifyEntity":"Q3Rn","./entity/carsModel":"pv82","./entity/eventToServer":"Pudb","./entity/monitoringEntity":"hvel","./entity/userDatingEntity":"Soei","./entity/logPlayerEntity":"JLGa","./entity/apartmentEntity":"K5GH","./entity/condoEntity":"JZQ2","./entity/housesEntity":"kvtc","./entity/phone":"K9Zo","./entity/stockEntity":"oqg0","./entity/logReferrerEntity":"tSli","./entity/logAuthEntity":"T8aA","./entity/mafiaWarEntity":"GUii","./entity/parkPlaceEntity":"BQ3k","./entity/carRent":"wd09","./entity/autosalonPercent":"qqav","./entity/autosalonModels":"SdUa","./entity/rpInvaderAdEntity":"dIe4","./entity/daynightEntity":"w9k0","./entity/auctionSettingsEntity":"s1kb","./entity/auctionEntity":"fQUH","./entity/promocodeTopEntity":"ixsW","./entity/logFractionGunEntity":"WakH","./entity/vehInfoEntity":"Ogpy","./entity/raceCfgEntity":"ZMA7","./entity/tradeLogEntity":"zzFV"}],"PN4J":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39871,7 +39875,7 @@ let tax = {
   }
 };
 exports.tax = tax;
-},{"../modules/data":"5Edc","../modules/methods":"+qXS","../user":"+QE3","../business/bank":"MvN0","../condo":"YoDO","../houses":"buna","../apartments":"qIZj","../business":"y5vZ","../vehicles":"pYYy","../stock":"MdNj","./weather":"uehX","../modules/entity/business":"uUTa","../modules/entity/user":"xF3w","../modules/entity/housesEntity":"kvtc","../modules/entity/condoEntity":"9J/Z","../modules/entity/apartmentEntity":"K5GH","../modules/entity/stockEntity":"oqg0","../modules/entity/carsModel":"pv82","../modules/entity/rpInvaderAdEntity":"dIe4","../modules/sequelize":"ylsz"}],"L+Iq":[function(require,module,exports) {
+},{"../modules/data":"Edcz","../modules/methods":"qXSp","../user":"QE3B","../business/bank":"MvN0","../condo":"YoDO","../houses":"buna","../apartments":"qIZj","../business":"y5vZ","../vehicles":"pYYy","../stock":"MdNj","./weather":"uehX","../modules/entity/business":"uUTa","../modules/entity/user":"xF3w","../modules/entity/housesEntity":"kvtc","../modules/entity/condoEntity":"JZQ2","../modules/entity/apartmentEntity":"K5GH","../modules/entity/stockEntity":"oqg0","../modules/entity/carsModel":"pv82","../modules/entity/rpInvaderAdEntity":"dIe4","../modules/sequelize":"ylsz"}],"LIqP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40363,7 +40367,7 @@ let truckerContainerPrefix = 'trucker';
 mp.events.add("trailerAttached", (vehicle, trailer) => {
   if (_vehicles.vehicles.exists(vehicle) && _vehicles.vehicles.exists(trailer)) vehicle.setVariable('trailer', trailer.id);else if (_vehicles.vehicles.exists(vehicle)) vehicle.setVariable('trailer', undefined);
 });
-},{"../user":"+QE3","../modules/methods":"+qXS","../modules/data":"5Edc","../business":"y5vZ","../vehicles":"pYYy"}],"hw/m":[function(require,module,exports) {
+},{"../user":"QE3B","../modules/methods":"qXSp","../modules/data":"Edcz","../business":"y5vZ","../vehicles":"pYYy"}],"hwMc":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40743,7 +40747,7 @@ exports.mafiaWar = mafiaWar;
 setTimeout(() => {
   mafiaWar.timer();
 }, 30000);
-},{"../modules/methods":"+qXS","../modules/data":"5Edc","../user":"+QE3","./weather":"uehX","./tablet.events":"Fdqv","../../util/mafiaData":"nT9M","../modules/entity/mafiaWarEntity":"GUii"}],"Dmc2":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../modules/data":"Edcz","../user":"QE3B","./weather":"uehX","./tablet.events":"Fdqv","../../util/mafiaData":"nT9M","../modules/entity/mafiaWarEntity":"GUii"}],"Dmc2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41118,7 +41122,7 @@ var _default = {
   rulesPercentage
 };
 exports.default = _default;
-},{}],"5Rr1":[function(require,module,exports) {
+},{}],"Rr1D":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41282,7 +41286,7 @@ const pressE = player => {
 };
 
 exports.pressE = pressE;
-},{"./slotMachineData":"Dmc2","../../user":"+QE3","../methods":"+qXS"}],"Ikcx":[function(require,module,exports) {
+},{"./slotMachineData":"Dmc2","../../user":"QE3B","../methods":"qXSp"}],"Ikcx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41477,7 +41481,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.calculateAttachPosition = exports.shuffle = exports.vdist = void 0;
+exports.vdist = exports.shuffle = exports.calculateAttachPosition = void 0;
 
 const vdist = (v1, v2, useZ = true) => {
   const diffY = v1.y - v2.y;
@@ -41530,7 +41534,9 @@ var _business = require("../../business");
 
 var pokerHelpers = _interopRequireWildcard(require("../casino_threecard_poker/helpers"));
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42007,13 +42013,13 @@ const pressE = player => {
 };
 
 exports.pressE = pressE;
-},{"../../../shared/casino_roulette/helpers":"Ikcx","../methods":"+qXS","../menu":"Aiz7","../../user":"+QE3","../../business":"y5vZ","../casino_threecard_poker/helpers":"OHXS"}],"Vnvq":[function(require,module,exports) {
+},{"../../../shared/casino_roulette/helpers":"Ikcx","../methods":"qXSp","../menu":"Aiz7","../../user":"QE3B","../../business":"y5vZ","../casino_threecard_poker/helpers":"OHXS"}],"Vnvq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.mapWins = exports.BETS_BALANCE = exports.cardsArray = void 0;
+exports.mapWins = exports.cardsArray = exports.BETS_BALANCE = void 0;
 const values = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
 const suits = [{
   type: 'd',
@@ -42117,7 +42123,9 @@ var _pokersolver = require("pokersolver");
 
 var _methods = require("../methods");
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 const gameForTest = new _pokersolver.Game('threecard');
 
@@ -42512,7 +42520,7 @@ mp.events.add('casino.poker.server.setBet', (player, balance) => {
 
   player.call('casino.poker.client.setBet.response', [true, balance]);
 });
-},{"./helpers":"OHXS","./threeCardPokerData":"Vnvq","../../user":"+QE3","../methods":"+qXS"}],"JvB6":[function(require,module,exports) {
+},{"./helpers":"OHXS","./threeCardPokerData":"Vnvq","../../user":"QE3B","../methods":"qXSp"}],"JvB6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43016,13 +43024,13 @@ mp.events.add('casino.dice.server.setBet', player => {
 
   player.call('casino.dice.client.setBet.response', [true]);
 });
-},{"../../user":"+QE3","../methods":"+qXS","../casino_roulette":"XMgA","../../business":"y5vZ","../../../util/level":"MpJF"}],"d3wo":[function(require,module,exports) {
+},{"../../user":"QE3B","../methods":"qXSp","../casino_roulette":"XMgA","../../business":"y5vZ","../../../util/level":"MpJF"}],"d3wo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.createTempPromocode = exports.tempPromocodes = exports.deadList = exports.sendmoneymax = exports.sendMoney = void 0;
+exports.tempPromocodes = exports.sendmoneymax = exports.sendMoney = exports.deadList = exports.createTempPromocode = void 0;
 
 var _data = require("./data");
 
@@ -43138,11 +43146,13 @@ var _carsModel = require("./entity/carsModel");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -50459,7 +50469,7 @@ mp.events.addRemoteCounted("server:show:quests", player => {
   player.quests.map(item => {
     let datas = (0, _quests.getQuest)(item.name);
     if (!datas && typeof datas != "object") return;
-    data.push(_objectSpread({}, item, {
+    data.push(_objectSpread(_objectSpread({}, item), {}, {
       desc: datas.desc,
       rewards: datas.rewards,
       group: datas.group,
@@ -50483,7 +50493,7 @@ mp.events.add("toggleCrouch", player => {
     player.setVariable('isCrouched', false);
   }
 });
-},{"./data":"5Edc","./methods":"+qXS","./pickups":"xTdX","../user":"+QE3","../coffer":"sKID","../modules/chat":"e1Zb","../vehicles":"pYYy","../houses":"buna","../condo":"YoDO","../stock":"MdNj","../apartments":"qIZj","../business":"y5vZ","../enums":"9ZRY","../inventory":"4m5o","../managers/weather":"uehX","../managers/dispatcher":"bsac","../items":"nuVl","../business/cloth":"Lio2","../business/shop":"e2yF","../business/lsc":"C62+","../business/rent":"G8F2","../business/gun":"1/8Y","../business/fuel":"nyp7","../business/barberShop":"bktO","../business/tattoo":"Iy5w","../business/bar":"ZO2Y","../business/licenseCenter":"uLEY","../phone":"1Gt5","../managers/tax":"PN4J","../managers/trucker":"L+Iq","../managers/mafiaWar":"hw/m","../business/bank":"MvN0","../business/autosalon/index":"JYAF","./casino_slot_machines":"5Rr1","./casino_roulette":"XMgA","./casino_threecard_poker":"hevW","./casino_dice":"JvB6","../../util/sharedData":"bNis","./menu":"Aiz7","./entity/user":"xF3w","./admin":"s4Xg","../config/quests":"2CFs","./entity/blackList":"UcH2","../../util/level":"MpJF","../log":"MNUA","../../util/newrage":"mgLX","./entity/promocodeUsing":"u9lD","./entity/logFractionGunEntity":"WakH","./entity/apartmentEntity":"K5GH","./entity/userDatingEntity":"Soei","./entity/rpInvaderAdEntity":"dIe4","./entity/promocodeTopEntity":"ixsW","./whitelist":"H/Cq","./entity/carsModel":"pv82"}],"9jff":[function(require,module,exports) {
+},{"./data":"Edcz","./methods":"qXSp","./pickups":"xTdX","../user":"QE3B","../coffer":"sKID","../modules/chat":"e1Zb","../vehicles":"pYYy","../houses":"buna","../condo":"YoDO","../stock":"MdNj","../apartments":"qIZj","../business":"y5vZ","../enums":"ZRYf","../inventory":"m5ow","../managers/weather":"uehX","../managers/dispatcher":"bsac","../items":"nuVl","../business/cloth":"Lio2","../business/shop":"e2yF","../business/lsc":"C62B","../business/rent":"G8F2","../business/gun":"Y0m3","../business/fuel":"nyp7","../business/barberShop":"bktO","../business/tattoo":"Iy5w","../business/bar":"ZO2Y","../business/licenseCenter":"uLEY","../phone":"Gt5n","../managers/tax":"PN4J","../managers/trucker":"LIqP","../managers/mafiaWar":"hwMc","../business/bank":"MvN0","../business/autosalon/index":"JYAF","./casino_slot_machines":"Rr1D","./casino_roulette":"XMgA","./casino_threecard_poker":"hevW","./casino_dice":"JvB6","../../util/sharedData":"bNis","./menu":"Aiz7","./entity/user":"xF3w","./admin":"s4Xg","../config/quests":"CFsv","./entity/blackList":"UcH2","../../util/level":"MpJF","../log":"MNUA","../../util/newrage":"mgLX","./entity/promocodeUsing":"u9lD","./entity/logFractionGunEntity":"WakH","./entity/apartmentEntity":"K5GH","./entity/userDatingEntity":"Soei","./entity/rpInvaderAdEntity":"dIe4","./entity/promocodeTopEntity":"ixsW","./whitelist":"HCq8","./entity/carsModel":"pv82"}],"jffZ":[function(require,module,exports) {
 "use strict";
 
 var _methods = require("../modules/methods");
@@ -50508,7 +50518,7 @@ process.on('unhandledRejection', (reason, p) => {
 }).on('uncaughtException', err => {
   console.error(err, 'Uncaught Exception thrown');
 });
-},{"../modules/methods":"+qXS"}],"VDhe":[function(require,module,exports) {
+},{"../modules/methods":"qXSp"}],"VDhe":[function(require,module,exports) {
 mp.events.add('flyMode', (player, status) => {
   player.flymode = status;
   if (player.spectatePosition) return;
@@ -50523,9 +50533,9 @@ var _user = require("../user");
 
 var _chat = require("./chat");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -50544,7 +50554,7 @@ _chat.chat.registerCommand('cmp', (player, name, cnt) => {
   let many = _methods.methods.parseInt(cnt);
 
   if (isNaN(many) || many < 0) many = 0;
-  mpList.set(name, _objectSpread({}, player.position, {
+  mpList.set(name, _objectSpread(_objectSpread({}, player.position), {}, {
     d: player.dimension,
     cnt: many,
     open: true
@@ -50607,7 +50617,7 @@ _chat.chat.registerCommand('mp', (player, name) => {
   if (mpUser.has(_user.user.getId(player))) return player.notify("Вы уже участвуете в мероприятии");
   if (_user.user.isInMp(player)) return player.notify(`~r~Вы уже зарегистрированы либо принимаете участие в другом мероприятии`);
   if (!_user.user.isReadyForSmth(player)) return player.notify("Вы не можете участвовать в мероприятии");
-  mpUser.set(_user.user.getId(player), _objectSpread({}, player.position, {
+  mpUser.set(_user.user.getId(player), _objectSpread(_objectSpread({}, player.position), {}, {
     d: player.dimension,
     name
   }));
@@ -50638,7 +50648,7 @@ function exitFromMp(id) {
     mpUser.delete(id);
   }, 200);
 }
-},{"./methods":"+qXS","../user":"+QE3","./chat":"e1Zb"}],"ukAm":[function(require,module,exports) {
+},{"./methods":"qXSp","../user":"QE3B","./chat":"e1Zb"}],"ukAm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50646,9 +50656,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.doorsData = void 0;
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -51241,10 +51251,10 @@ let doorsData = {
     name: 'FIB LIFT',
     pair: 65
   },
-  '68': _objectSpread({
+  '68': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(333.7885, -593.4055, 28.80277), {
+  }, new mp.Vector3(333.7885, -593.4055, 28.80277)), {}, {
     hash: "v_ilev_cor_firedoor",
     locked: true,
     key: 'key_emc',
@@ -51252,10 +51262,10 @@ let doorsData = {
     name: 'Больницы',
     pair: 69
   }),
-  '69': _objectSpread({
+  '69': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(334.5754, -591.2445, 28.80277), {
+  }, new mp.Vector3(334.5754, -591.2445, 28.80277)), {}, {
     hash: "v_ilev_cor_firedoor",
     locked: true,
     key: 'key_emc',
@@ -51263,20 +51273,20 @@ let doorsData = {
     name: 'Больницы',
     pair: 68
   }),
-  '70': _objectSpread({
+  '70': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(337.2274, -584.0469, 28.81494), {
+  }, new mp.Vector3(337.2274, -584.0469, 28.81494)), {}, {
     hash: "v_ilev_cor_firedoorwide",
     locked: true,
     key: 'key_emc',
     permission: '16',
     name: 'Больницы'
   }),
-  '71': _objectSpread({
+  '71': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(341.392, -572.5071, 28.81897), {
+  }, new mp.Vector3(341.392, -572.5071, 28.81897)), {}, {
     hash: "v_ilev_cor_firedoor",
     locked: true,
     key: 'key_emc',
@@ -51284,10 +51294,10 @@ let doorsData = {
     name: 'Больницы',
     pair: 72
   }),
-  '72': _objectSpread({
+  '72': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(342.1784, -570.3473, 28.81897), {
+  }, new mp.Vector3(342.1784, -570.3473, 28.81897)), {}, {
     hash: "v_ilev_cor_firedoor",
     locked: true,
     key: 'key_emc',
@@ -51295,10 +51305,10 @@ let doorsData = {
     name: 'Больницы',
     pair: 71
   }),
-  '73': _objectSpread({
+  '73': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(321.0088, -559.9609, 28.88031), {
+  }, new mp.Vector3(321.0088, -559.9609, 28.88031)), {}, {
     hash: "hei_prop_heist_cutscene_doorc_r",
     locked: true,
     key: 'key_emc',
@@ -51306,10 +51316,10 @@ let doorsData = {
     name: 'Больницы',
     pair: 74
   }),
-  '74': _objectSpread({
+  '74': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(318.7677, -561.0198, 28.88031), {
+  }, new mp.Vector3(318.7677, -561.0198, 28.88031)), {}, {
     hash: "hei_prop_heist_cutscene_doorc_r",
     locked: true,
     key: 'key_emc',
@@ -51317,10 +51327,10 @@ let doorsData = {
     name: 'Больницы',
     pair: 73
   }),
-  '75': _objectSpread({
+  '75': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(345.0586, -567.9648, 28.82051), {
+  }, new mp.Vector3(345.0586, -567.9648, 28.82051)), {}, {
     hash: "v_ilev_cor_firedoor",
     locked: true,
     key: 'key_emc',
@@ -51328,10 +51338,10 @@ let doorsData = {
     name: 'Больницы',
     pair: 76
   }),
-  '76': _objectSpread({
+  '76': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(347.2267, -568.7333, 28.82051), {
+  }, new mp.Vector3(347.2267, -568.7333, 28.82051)), {}, {
     hash: "v_ilev_cor_firedoor",
     locked: true,
     key: 'key_emc',
@@ -51339,10 +51349,10 @@ let doorsData = {
     name: 'Больницы',
     pair: 75
   }),
-  '77': _objectSpread({
+  '77': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(346.8181, -572.0256, 28.7973), {
+  }, new mp.Vector3(346.8181, -572.0256, 28.7973)), {}, {
     hash: "v_ilev_cor_firedoor",
     locked: true,
     key: 'key_emc',
@@ -51350,10 +51360,10 @@ let doorsData = {
     name: 'Больницы',
     pair: 78
   }),
-  '78': _objectSpread({
+  '78': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false
-  }, new mp.Vector3(346.031, -574.1888, 28.7973), {
+  }, new mp.Vector3(346.031, -574.1888, 28.7973)), {}, {
     hash: "v_ilev_cor_firedoor",
     locked: true,
     key: 'key_emc',
@@ -51361,459 +51371,459 @@ let doorsData = {
     name: 'Больницы',
     pair: 77
   }),
-  '79': _objectSpread({
+  '79': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(1851.132568359375, 3682.4052734375, 34.26708984375), {
+  }, new mp.Vector3(1851.132568359375, 3682.4052734375, 34.26708984375)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 80
   }),
-  '80': _objectSpread({
+  '80': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(1850.132568359375, 3684.4052734375, 34.26708984375), {
+  }, new mp.Vector3(1850.132568359375, 3684.4052734375, 34.26708984375)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 79
   }),
-  '81': _objectSpread({
+  '81': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(1847.132568359375, 3690.4052734375, 34.26708984375), {
+  }, new mp.Vector3(1847.132568359375, 3690.4052734375, 34.26708984375)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 82
   }),
-  '82': _objectSpread({
+  '82': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(1849.132568359375, 3690.4052734375, 34.26708984375), {
+  }, new mp.Vector3(1849.132568359375, 3690.4052734375, 34.26708984375)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 81
   }),
-  '83': _objectSpread({
+  '83': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-441.48, 6012.84, 31.72), {
+  }, new mp.Vector3(-441.48, 6012.84, 31.72)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 84
   }),
-  '84': _objectSpread({
+  '84': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-442.92, 6011.26, 31.72), {
+  }, new mp.Vector3(-442.92, 6011.26, 31.72)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 83
   }),
-  '85': _objectSpread({
+  '85': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-447.81, 6006.98, 31.72), {
+  }, new mp.Vector3(-447.81, 6006.98, 31.72)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 86
   }),
-  '86': _objectSpread({
+  '86': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-448.98, 6008.60, 31.72), {
+  }, new mp.Vector3(-448.98, 6008.60, 31.72)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 85
   }),
-  '87': _objectSpread({
+  '87': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-450.12, 6016.01, 31.72), {
+  }, new mp.Vector3(-450.12, 6016.01, 31.72)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа'
   }),
-  '88': _objectSpread({
+  '88': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-451.26, 6006.95, 31.83), {
+  }, new mp.Vector3(-451.26, 6006.95, 31.83)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа'
   }),
-  '89': _objectSpread({
+  '89': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-446.65, 6001.78, 31.72), {
+  }, new mp.Vector3(-446.65, 6001.78, 31.72)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа'
   }),
-  '90': _objectSpread({
+  '90': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-440.91, 6008.02, 31.72), {
+  }, new mp.Vector3(-440.91, 6008.02, 31.72)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 91
   }),
-  '91': _objectSpread({
+  '91': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: -2023754432
-  }, new mp.Vector3(-442.31, 6009.10, 31.72), {
+  }, new mp.Vector3(-442.31, 6009.10, 31.72)), {}, {
     locked: true,
     key: 'key_lspd',
     permission: '7',
     name: 'Офис шерифа',
     pair: 90
   }),
-  '92': _objectSpread({
+  '92': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-556.3757, -207.3055, 38.54186), {
+  }, new mp.Vector3(-556.3757, -207.3055, 38.54186)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 93
   }),
-  '93': _objectSpread({
+  '93': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-557.6763, -205.053, 38.54773), {
+  }, new mp.Vector3(-557.6763, -205.053, 38.54773)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 92
   }),
-  '94': _objectSpread({
+  '94': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-560.6801, -199.826, 38.54251), {
+  }, new mp.Vector3(-560.6801, -199.826, 38.54251)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 95
   }),
-  '95': _objectSpread({
+  '95': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-559.3853, -202.0843, 38.53995), {
+  }, new mp.Vector3(-559.3853, -202.0843, 38.53995)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 94
   }),
-  '96': _objectSpread({
+  '96': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_fib_doore_l"
-  }, new mp.Vector3(-562.6736, -196.3704, 37.37849), {
+  }, new mp.Vector3(-562.6736, -196.3704, 37.37849)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 97
   }),
-  '97': _objectSpread({
+  '97': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_fib_doore_r"
-  }, new mp.Vector3(-563.4216, -195.0782, 37.38001), {
+  }, new mp.Vector3(-563.4216, -195.0782, 37.38001)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 96
   }),
-  '98': _objectSpread({
+  '98': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-541.8019, -187.353, 38.38026), {
+  }, new mp.Vector3(-541.8019, -187.353, 38.38026)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 99
   }),
-  '99': _objectSpread({
+  '99': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-543.1104, -185.1008, 38.38026), {
+  }, new mp.Vector3(-543.1104, -185.1008, 38.38026)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 98
   }),
-  '100': _objectSpread({
+  '100': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-540.6802, -189.3759, 38.38026), {
+  }, new mp.Vector3(-540.6802, -189.3759, 38.38026)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 101
   }),
-  '101': _objectSpread({
+  '101': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-539.3868, -191.6297, 38.38026), {
+  }, new mp.Vector3(-539.3868, -191.6297, 38.38026)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии',
     pair: 100
   }),
-  '102': _objectSpread({
+  '102': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-537.7949, -192.7626, 38.3283), {
+  }, new mp.Vector3(-537.7949, -192.7626, 38.3283)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии'
   }),
-  '103': _objectSpread({
+  '103': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ra_door2"
-  }, new mp.Vector3(-543.4396, -182.9641, 38.32299), {
+  }, new mp.Vector3(-543.4396, -182.9641, 38.32299)), {}, {
     locked: true,
     key: 'key_meria',
     permission: '1',
     name: 'Мэрии'
   }),
-  '104': _objectSpread({
+  '104': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_gate_prison_01"
-  }, new mp.Vector3(79.33016, -689.0258, 30.5788), {
+  }, new mp.Vector3(79.33016, -689.0258, 30.5788)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB'
   }),
-  '105': _objectSpread({
+  '105': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_gate_prison_01"
-  }, new mp.Vector3(191.0169, -727.006, 33.5188), {
+  }, new mp.Vector3(191.0169, -727.006, 33.5188)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB'
   }),
-  '106': _objectSpread({
+  '106': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_gate_prison_01"
-  }, new mp.Vector3(399.8277, -551.13960000, 27.5677), {
+  }, new mp.Vector3(399.8277, -551.13960000, 27.5677)), {}, {
     locked: true,
     key: 'key_ems',
     permission: '16',
     name: 'EMS'
   }),
-  '107': _objectSpread({
+  '107': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_fibl_door01"
-  }, new mp.Vector3(2521.207, -416.6346, 94.5519), {
+  }, new mp.Vector3(2521.207, -416.6346, 94.5519)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB',
     pair: 108
   }),
-  '108': _objectSpread({
+  '108': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_fibl_door02"
-  }, new mp.Vector3(2518.207, -413.6346, 94.5519), {
+  }, new mp.Vector3(2518.207, -413.6346, 94.5519)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB',
     pair: 107
   }),
-  '109': _objectSpread({
+  '109': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_facgate_05_r"
-  }, new mp.Vector3(2569.207, -325.6346, 94.12363), {
+  }, new mp.Vector3(2569.207, -325.6346, 94.12363)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB',
     pair: 110
   }),
-  '110': _objectSpread({
+  '110': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_facgate_05_r"
-  }, new mp.Vector3(2559.207, -325.6346, 94.12363), {
+  }, new mp.Vector3(2559.207, -325.6346, 94.12363)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB',
     pair: 109
   }),
-  '111': _objectSpread({
+  '111': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_doormaf"
-  }, new mp.Vector3(-1518.028, 851.5502, 181.7178), {
+  }, new mp.Vector3(-1518.028, 851.5502, 181.7178)), {}, {
     locked: true,
     key: 'key_ukr',
     permission: '11',
     name: 'Украинского посольства',
     pair: 112
   }),
-  '112': _objectSpread({
+  '112': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_doormaf"
-  }, new mp.Vector3(-1515.028, 850.5502, 181.7178), {
+  }, new mp.Vector3(-1515.028, 850.5502, 181.7178)), {}, {
     locked: true,
     key: 'key_ukr',
     permission: '11',
     name: 'Украинского посольства',
     pair: 111
   }),
-  '113': _objectSpread({
+  '113': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_doormaf"
-  }, new mp.Vector3(-1490.028, 851.5502, 181.7178), {
+  }, new mp.Vector3(-1490.028, 851.5502, 181.7178)), {}, {
     locked: true,
     key: 'key_ukr',
     permission: '11',
     name: 'Украинского посольства',
     pair: 114
   }),
-  '114': _objectSpread({
+  '114': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_doormaf"
-  }, new mp.Vector3(-1491.461, 853.1818, 181.718), {
+  }, new mp.Vector3(-1491.461, 853.1818, 181.718)), {}, {
     locked: true,
     key: 'key_ukr',
     permission: '11',
     name: 'Украинского посольства',
     pair: 113
   }),
-  '115': _objectSpread({
+  '115': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_doormaf"
-  }, new mp.Vector3(-1520.761, 848.3218, 181.718), {
+  }, new mp.Vector3(-1520.761, 848.3218, 181.718)), {}, {
     locked: true,
     key: 'key_ukr',
     permission: '11',
     name: 'Украинского посольства'
   }),
-  '116': _objectSpread({
+  '116': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_doormaf"
-  }, new mp.Vector3(-1500.631, 856.6718, 181.718), {
+  }, new mp.Vector3(-1500.631, 856.6718, 181.718)), {}, {
     locked: true,
     key: 'key_ukr',
     permission: '11',
     name: 'Украинского посольства'
   }),
-  '117': _objectSpread({
+  '117': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ph_cellgate"
-  }, new mp.Vector3(2499.446, -413.6485, 90.25725), {
+  }, new mp.Vector3(2499.446, -413.6485, 90.25725)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB'
   }),
-  '118': _objectSpread({
+  '118': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ph_cellgate"
-  }, new mp.Vector3(2496.587, -410.7944, 90.25725), {
+  }, new mp.Vector3(2496.587, -410.7944, 90.25725)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB'
   }),
-  '119': _objectSpread({
+  '119': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ph_cellgate"
-  }, new mp.Vector3(2493.942, -408.1546, 90.25725), {
+  }, new mp.Vector3(2493.942, -408.1546, 90.25725)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB'
   }),
-  '120': _objectSpread({
+  '120': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "v_ilev_ph_cellgate"
-  }, new mp.Vector3(2490.966, -405.1835, 94.25725), {
+  }, new mp.Vector3(2490.966, -405.1835, 94.25725)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
     name: 'FIB'
   }),
-  '121': _objectSpread({
+  '121': _objectSpread(_objectSpread({
     offset: -1.2,
     mystatus: false,
     hash: "prop_facgate_01"
-  }, new mp.Vector3(2491.868, -303.4783, 91.99238), {
+  }, new mp.Vector3(2491.868, -303.4783, 91.99238)), {}, {
     locked: true,
     key: 'key_fib',
     permission: '3',
@@ -52002,9 +52012,9 @@ var _inventory = require("../inventory");
 
 var _doors = require("../../util/doors");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -52115,7 +52125,7 @@ mp.events.add('playerJoin', player => {
 
   player.call('sendDoorsList', [JSON.stringify(datas)]);
 });
-},{"../user":"+QE3","./methods":"+qXS","../../util/methods":"Z5QB","../inventory":"4m5o","../../util/doors":"ukAm"}],"GFdU":[function(require,module,exports) {
+},{"../user":"QE3B","./methods":"qXSp","../../util/methods":"Z5QB","../inventory":"m5ow","../../util/doors":"ukAm"}],"GFdU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52328,7 +52338,7 @@ class RadioRoomsContorllerClass {
 
 let RadioRoomsContorller = new RadioRoomsContorllerClass();
 exports.RadioRoomsContorller = RadioRoomsContorller;
-},{"./RadioRoom":"GFdU","../modules/methods":"+qXS"}],"5T7p":[function(require,module,exports) {
+},{"./RadioRoom":"GFdU","../modules/methods":"qXSp"}],"T7py":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52428,7 +52438,7 @@ mp.events.add('voice.server.callMethod', (method, ...args) => {
     return vmethods[method](...args);
   }
 });
-},{"./RadioRoomsContorller":"FYdw","../modules/methods":"+qXS"}],"0VUJ":[function(require,module,exports) {
+},{"./RadioRoomsContorller":"FYdw","../modules/methods":"qXSp"}],"VUJK":[function(require,module,exports) {
 "use strict";
 
 var _user = require("./user");
@@ -52457,7 +52467,7 @@ mp.events.add({
     });
   }
 });
-},{"./user":"+QE3"}],"woHJ":[function(require,module,exports) {
+},{"./user":"QE3B"}],"woHJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52581,7 +52591,7 @@ const list = [{
 }];
 var _default = list;
 exports.default = _default;
-},{"../user":"+QE3","../modules/casino_roulette":"XMgA","../business":"y5vZ"}],"xEa3":[function(require,module,exports) {
+},{"../user":"QE3B","../modules/casino_roulette":"XMgA","../business":"y5vZ"}],"xEa3":[function(require,module,exports) {
 "use strict";
 
 var _teleport = _interopRequireDefault(require("../config/teleport"));
@@ -52594,9 +52604,9 @@ var _methods = require("./methods");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -52681,7 +52691,7 @@ _teleport.default.forEach(element => {
     }, 1, pos[4] ? pos[4] : 0);
   });
 });
-},{"../config/teleport":"woHJ","../modules/menu":"Aiz7","../user":"+QE3","./methods":"+qXS"}],"SGiU":[function(require,module,exports) {
+},{"../config/teleport":"woHJ","../modules/menu":"Aiz7","../user":"QE3B","./methods":"qXSp"}],"SGiU":[function(require,module,exports) {
 "use strict";
 
 var _npc = require("./npc");
@@ -52733,7 +52743,7 @@ let startQuestNpc = _npc.npc_dialog.new("Кевин", "Сотрудник мэр
     }
   }
 });
-},{"./npc":"jKJb","../user":"+QE3","./chat":"e1Zb","../../util/level":"MpJF"}],"cEZh":[function(require,module,exports) {
+},{"./npc":"jKJb","../user":"QE3B","./chat":"e1Zb","../../util/level":"MpJF"}],"cEZh":[function(require,module,exports) {
 "use strict";
 
 var _web = require("../web");
@@ -53193,7 +53203,7 @@ async function tokenAuth(req, res) {
 
   return true;
 }
-},{"../web":"txRo","./entity/user":"xF3w","./methods":"+qXS","../user":"+QE3","./admin":"s4Xg","./entity/warns":"0NOU","./entity/blackList":"UcH2","./entity/tradeLogEntity":"zzFV","./whitelist":"H/Cq"}],"uwcG":[function(require,module,exports) {
+},{"../web":"txRo","./entity/user":"xF3w","./methods":"qXSp","../user":"QE3B","./admin":"s4Xg","./entity/warns":"NOUi","./entity/blackList":"UcH2","./entity/tradeLogEntity":"zzFV","./whitelist":"HCq8"}],"uwcG":[function(require,module,exports) {
 function serializeAttachments(attachments) {
   return attachments.map(hash => hash.toString(36)).join("|");
 }
@@ -53231,7 +53241,7 @@ mp.events.add("playerJoin", player => {
 });
 mp.events.add("staticAttachments.Add", (player, hash) => player.addAttachment(parseInt(hash, 36), false));
 mp.events.add("staticAttachments.Remove", (player, hash) => player.addAttachment(parseInt(hash, 36), true));
-},{}],"0Gj2":[function(require,module,exports) {
+},{}],"Gj2G":[function(require,module,exports) {
 "use strict";
 
 var _newrage = require("../../util/newrage");
@@ -53533,7 +53543,7 @@ setTimeout(() => {
     m.open();
   }, 2, -1);
 }, 1000);
-},{"../modules/methods":"+qXS","../modules/menu":"Aiz7","../user":"+QE3","../modules/entity/shooting":"ocv0"}],"VWAY":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../modules/menu":"Aiz7","../user":"QE3B","../modules/entity/shooting":"ocv0"}],"VWAY":[function(require,module,exports) {
 "use strict";
 
 var _methods = require("../../util/methods");
@@ -53682,7 +53692,7 @@ mp.events.add("playerStartEnterVehicle", (player, vehicle, seat) => {
     vehicle.deliverCheckpoint = true;
   }
 });
-},{"../../util/methods":"Z5QB","../user":"+QE3","../../util/gang.deliver":"kfmD","../vehicles":"pYYy","../modules/methods":"+qXS","./moneyChest":"HIeq","../managers/dispatcher":"bsac","../../util/newrage":"mgLX"}],"ygeq":[function(require,module,exports) {
+},{"../../util/methods":"Z5QB","../user":"QE3B","../../util/gang.deliver":"kfmD","../vehicles":"pYYy","../modules/methods":"qXSp","./moneyChest":"HIeq","../managers/dispatcher":"bsac","../../util/newrage":"mgLX"}],"ygeq":[function(require,module,exports) {
 "use strict";
 
 var _user = require("../user");
@@ -53710,7 +53720,7 @@ mp.events.add('cheat:detect', (player, reason, more) => {
 
   _user.user.kickAntiCheat(player, reason);
 });
-},{"../user":"+QE3"}],"dnPV":[function(require,module,exports) {
+},{"../user":"QE3B"}],"dnPV":[function(require,module,exports) {
 mp.events.add("fpsync.update", (player, camPitch, camHeading) => {
   mp.players.call(player.streamedPlayers, "fpsync.update", [player.id, camPitch, camHeading]);
 });
@@ -53719,7 +53729,7 @@ mp.events.add("pointingStop", player => {
 });
 },{}],"M8KQ":[function(require,module,exports) {
 
-},{}],"/9L+":[function(require,module,exports) {
+},{}],"LKpP":[function(require,module,exports) {
 "use strict";
 
 var _user = require("../user");
@@ -53778,13 +53788,13 @@ function unskate(player) {
 mp.events.add("unskate", player => unskate(player));
 mp.events.add("playerDeath", player => unskate(player));
 mp.events.add("playerQuit", player => unskate(player));
-},{"../user":"+QE3"}],"TX0E":[function(require,module,exports) {
+},{"../user":"QE3B"}],"TX0E":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.c4grabDays = exports.c4grabamount = void 0;
+exports.c4grabamount = exports.c4grabDays = void 0;
 
 var _methods = require("./methods");
 
@@ -53886,7 +53896,7 @@ _methods.methods.createDynamicCheckpoint(new mp.Vector3(-1781.40, 2996.11, 31.81
     if (c4grabamount > 0) player.notify("Осталось контейнеров: " + c4grabamount);else player.notify("~r~Больше контейнеров нет, ожидайте пополнение склада");
   }, 10000);
 }, 2);
-},{"./methods":"+qXS","../user":"+QE3","../inventory":"4m5o","../items":"nuVl","../../util/level":"MpJF"}],"1QNC":[function(require,module,exports) {
+},{"./methods":"qXSp","../user":"QE3B","../inventory":"m5ow","../items":"nuVl","../../util/level":"MpJF"}],"QNCd":[function(require,module,exports) {
 "use strict";
 
 var _weather = require("../managers/weather");
@@ -54080,7 +54090,7 @@ _methods.methods.createDynamicCheckpoint(pacificPos, "Нажмите ~g~E~w~ ч�
     });
   }, 10000);
 }, 2);
-},{"../managers/weather":"uehX","../user":"+QE3","../inventory":"4m5o","../items":"nuVl","..":"7QCb","./chat":"e1Zb","./methods":"+qXS","../../util/level":"MpJF"}],"MZmO":[function(require,module,exports) {
+},{"../managers/weather":"uehX","../user":"QE3B","../inventory":"m5ow","../items":"nuVl","..":"QCba","./chat":"e1Zb","./methods":"qXSp","../../util/level":"MpJF"}],"MZmO":[function(require,module,exports) {
 "use strict";
 
 var _weather = require("../managers/weather");
@@ -54201,7 +54211,7 @@ pacificPoss.map((q, index) => {
       return;
     }
 
-    if (!_.testMode && mp.players.length < 150 && !_methods.methods.isTestServer()) {
+    if (!_.testMode && mp.players.length < 150) {
       player.notify("~r~Онлайн на сервере должен быть более 150 человек");
       return;
     }
@@ -54280,7 +54290,7 @@ pacificPoss.map((q, index) => {
     }, 10000);
   }, 2);
 });
-},{"../managers/weather":"uehX","../user":"+QE3","../inventory":"4m5o","../items":"nuVl","..":"7QCb","./chat":"e1Zb","./methods":"+qXS","../../util/level":"MpJF"}],"uhmi":[function(require,module,exports) {
+},{"../managers/weather":"uehX","../user":"QE3B","../inventory":"m5ow","../items":"nuVl","..":"QCba","./chat":"e1Zb","./methods":"qXSp","../../util/level":"MpJF"}],"uhmi":[function(require,module,exports) {
 "use strict";
 
 var _methods = require("./methods");
@@ -54393,7 +54403,7 @@ function checkAccess(player) {
     return false;
   }
 
-  if (!_methods.methods.isTestServer() && !_.testMode && mp.players.length < 100) {
+  if (!_.testMode && mp.players.length < 100) {
     player.notify("~r~Онлайн на сервере должен быть более 100 человек");
     return false;
   }
@@ -54509,13 +54519,13 @@ positions.forEach(item => {
     }, 10000);
   }, 2);
 });
-},{"./methods":"+qXS","../managers/weather":"uehX","../user":"+QE3","../inventory":"4m5o","../items":"nuVl","..":"7QCb","./chat":"e1Zb","../../util/methods":"Z5QB","../../util/level":"MpJF"}],"anIM":[function(require,module,exports) {
+},{"./methods":"qXSp","../managers/weather":"uehX","../user":"QE3B","../inventory":"m5ow","../items":"nuVl","..":"QCba","./chat":"e1Zb","../../util/methods":"Z5QB","../../util/level":"MpJF"}],"anIM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.weaponGrabDays = exports.weapongrabamount = void 0;
+exports.weapongrabamount = exports.weaponGrabDays = void 0;
 
 var _methods = require("./methods");
 
@@ -54772,13 +54782,13 @@ mp.events.add("playerDeath", (player, reason, killer) => {
     alreadyKiller.delete(ids);
   }, alreadyKillerTimer * 60000);
 });
-},{"./methods":"+qXS","../managers/weather":"uehX","../user":"+QE3","../inventory":"4m5o","../items":"nuVl","../../util/level":"MpJF","../../util/methods":"Z5QB","../managers/dispatcher":"bsac"}],"LfX4":[function(require,module,exports) {
+},{"./methods":"qXSp","../managers/weather":"uehX","../user":"QE3B","../inventory":"m5ow","../items":"nuVl","../../util/level":"MpJF","../../util/methods":"Z5QB","../managers/dispatcher":"bsac"}],"LfX4":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.exitFromDuel = exports.openDuelMenu = exports.exitPos = exports.registerPos2 = exports.registerPos = void 0;
+exports.registerPos2 = exports.registerPos = exports.openDuelMenu = exports.exitPos = exports.exitFromDuel = void 0;
 
 var _methods = require("./methods");
 
@@ -55087,7 +55097,7 @@ mp.events.add('playerDeath', player => {
   if (!player.duelLobby) return;
   exitFromDuel(player);
 });
-},{"./methods":"+qXS","./menu":"Aiz7","../user":"+QE3","../../util/methods":"Z5QB","../inventory":"4m5o","../config/adminsTp":"gqKn"}],"2PrT":[function(require,module,exports) {
+},{"./methods":"qXSp","./menu":"Aiz7","../user":"QE3B","../../util/methods":"Z5QB","../inventory":"m5ow","../config/adminsTp":"gqKn"}],"PrTm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -55397,13 +55407,13 @@ const loadAuction = () => {
 };
 
 exports.loadAuction = loadAuction;
-},{"./methods":"+qXS","./menu":"Aiz7","../user":"+QE3","./entity/auctionSettingsEntity":"1s1k","./entity/auctionEntity":"fQUH","./entity/user":"xF3w"}],"dPRi":[function(require,module,exports) {
+},{"./methods":"qXSp","./menu":"Aiz7","../user":"QE3B","./entity/auctionSettingsEntity":"s1kb","./entity/auctionEntity":"fQUH","./entity/user":"xF3w"}],"dPRi":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.loadIntervalsMySQL = exports.mysql = void 0;
+exports.mysql = exports.loadIntervalsMySQL = void 0;
 
 var _user = require("../user");
 
@@ -56010,7 +56020,7 @@ const loadIntervalsMySQL = () => {
 };
 
 exports.loadIntervalsMySQL = loadIntervalsMySQL;
-},{"../user":"+QE3","./methods":"+qXS","../business":"y5vZ","../vehicles":"pYYy","../coffer":"sKID","../apartments":"qIZj","../condo":"YoDO","../houses":"buna","../stock":"MdNj","./sequelize":"ylsz","../inventory":"4m5o","./admin":"s4Xg","./entity/inventory":"bqq+","./data":"5Edc","./entity/carsModel":"pv82","./entity/eventToServer":"9Pud","./entity/user":"xF3w","./entity/monitoringEntity":"hvel","./entity/userDatingEntity":"Soei","./entity/logPlayerEntity":"JLGa"}],"29Bp":[function(require,module,exports) {
+},{"../user":"QE3B","./methods":"qXSp","../business":"y5vZ","../vehicles":"pYYy","../coffer":"sKID","../apartments":"qIZj","../condo":"YoDO","../houses":"buna","../stock":"MdNj","./sequelize":"ylsz","../inventory":"m5ow","./admin":"s4Xg","./entity/inventory":"bqqA","./data":"Edcz","./entity/carsModel":"pv82","./entity/eventToServer":"Pudb","./entity/user":"xF3w","./entity/monitoringEntity":"hvel","./entity/userDatingEntity":"Soei","./entity/logPlayerEntity":"JLGa"}],"BpKR":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -56105,7 +56115,7 @@ let timer = {
   min1Timer: () => {}
 };
 exports.timer = timer;
-},{"./methods":"+qXS","../user":"+QE3","./data":"5Edc","../business/bank":"MvN0","../inventory":"4m5o"}],"o1IG":[function(require,module,exports) {
+},{"./methods":"qXSp","../user":"QE3B","./data":"Edcz","../business/bank":"MvN0","../inventory":"m5ow"}],"o1IG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -56132,7 +56142,7 @@ let object = {
   }
 };
 exports.object = object;
-},{"../modules/methods":"+qXS"}],"n1sh":[function(require,module,exports) {
+},{"../modules/methods":"qXSp"}],"n1sh":[function(require,module,exports) {
 "use strict";
 
 var _chat = require("./chat");
@@ -56155,9 +56165,9 @@ var _raceCfgEntity = require("./entity/raceCfgEntity");
 
 var _sequelizeTypescript = require("sequelize-typescript");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -56176,10 +56186,10 @@ setInterval(() => {
 }, timerAuto * 60000);
 
 function getRacePoint(player, size) {
-  let res = player.vehicle ? _objectSpread({}, player.vehicle.position, {
+  let res = player.vehicle ? _objectSpread(_objectSpread({}, player.vehicle.position), {}, {
     h: player.vehicle.heading,
     r: size
-  }) : _objectSpread({}, player.position, {
+  }) : _objectSpread(_objectSpread({}, player.position), {}, {
     h: player.heading,
     r: size
   });
@@ -56564,7 +56574,7 @@ function getRandomRaceConfig() {
       },
       order: _sequelizeTypescript.Sequelize.fn('RAND')
     }).then(item => {
-      resolve(_objectSpread({}, dbtodata(item), {
+      resolve(_objectSpread(_objectSpread({}, dbtodata(item)), {}, {
         checkpoints: JSON.parse(item.checkpoints),
         spawns: JSON.parse(item.spawns)
       }));
@@ -56936,7 +56946,7 @@ function mapCat(player) {
     data.forEach(map => {
       m.newItem({
         name: map.name,
-        onpress: () => editMap(player, _objectSpread({}, dbtodata(map), {
+        onpress: () => editMap(player, _objectSpread(_objectSpread({}, dbtodata(map)), {}, {
           checkpoints: JSON.parse(map.checkpoints),
           spawns: JSON.parse(map.spawns)
         }))
@@ -57074,7 +57084,7 @@ _methods.methods.createDynamicCheckpoint(raceCheckPosition, "Нажмите ~g~�
   });
   m.open();
 }, 5, 0);
-},{"./chat":"e1Zb","../user":"+QE3","./methods":"+qXS","./menu":"Aiz7","../vehicles":"pYYy","../../util/methods":"Z5QB","../coffer":"sKID","../../util/newrage":"mgLX","./entity/raceCfgEntity":"ZMA7"}],"zg97":[function(require,module,exports) {
+},{"./chat":"e1Zb","../user":"QE3B","./methods":"qXSp","./menu":"Aiz7","../vehicles":"pYYy","../../util/methods":"Z5QB","../coffer":"sKID","../../util/newrage":"mgLX","./entity/raceCfgEntity":"ZMA7"}],"zg97":[function(require,module,exports) {
 "use strict";
 
 var _methods = require("../modules/methods");
@@ -57283,7 +57293,7 @@ function cameraManager(player, settings) {
   });
   m.open();
 }
-},{"../modules/methods":"+qXS","../modules/menu":"Aiz7","../user":"+QE3","../vehicles":"pYYy","../modules/chat":"e1Zb"}],"kFYX":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../modules/menu":"Aiz7","../user":"QE3B","../vehicles":"pYYy","../modules/chat":"e1Zb"}],"kFYX":[function(require,module,exports) {
 "use strict";
 
 var _methods = require("../modules/methods");
@@ -57509,7 +57519,7 @@ function createMarker2() {
     }, 30000);
   }, 1, 0, [33, 150, 243, 100]);
 }
-},{"../modules/methods":"+qXS","../../util/methods":"Z5QB","../user":"+QE3"}],"O54w":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../../util/methods":"Z5QB","../user":"QE3B"}],"O54w":[function(require,module,exports) {
 "use strict";
 
 var _methods = require("../modules/methods");
@@ -58166,7 +58176,7 @@ function usersVehList(player) {
     onpress: async () => {
       if (!checkVehStatus(player)) return;
 
-      let id = _methods.methods.parseInt((await _menu.menu.input(player, "Введите ID напарника")));
+      let id = _methods.methods.parseInt(await _menu.menu.input(player, "Введите ID напарника"));
 
       if (isNaN(id) || id < 1) return player.notify("ID указан не верно");
       checkVehUsers(veh);
@@ -58400,13 +58410,13 @@ mp.events.addRemoteCounted('server:gr6:grab', player => {
     player.notify('~b~Вы ограбили транспорт на сумму: ~s~$' + _methods.methods.numberFormat(money));
   }, 1500);
 });
-},{"../modules/methods":"+qXS","../modules/menu":"Aiz7","../user":"+QE3","../vehicles":"pYYy","../../util/methods":"Z5QB","../coffer":"sKID","../business":"y5vZ","../modules/chat":"e1Zb","../../util/level":"MpJF","../../util/newrage":"mgLX"}],"eOAh":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../modules/menu":"Aiz7","../user":"QE3B","../vehicles":"pYYy","../../util/methods":"Z5QB","../coffer":"sKID","../business":"y5vZ","../modules/chat":"e1Zb","../../util/level":"MpJF","../../util/newrage":"mgLX"}],"eOAh":[function(require,module,exports) {
 "use strict";
 
 require("./prison");
 
 require("./gr6");
-},{"./prison":"kFYX","./gr6":"O54w"}],"GLP/":[function(require,module,exports) {
+},{"./prison":"kFYX","./gr6":"O54w"}],"GLPL":[function(require,module,exports) {
 "use strict";
 
 var _methods = require("../modules/methods");
@@ -58429,9 +58439,9 @@ var _string = require("../../util/string");
 
 var _newrage = require("../../util/newrage");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -58791,9 +58801,9 @@ _chat.chat.registerCommand("pointcatch", player => {
   m.newItem({
     name: "Новая",
     onpress: () => {
-      player.notify("Количество точек: " + points.push(player.vehicle ? _objectSpread({}, player.vehicle.position, {
+      player.notify("Количество точек: " + points.push(player.vehicle ? _objectSpread(_objectSpread({}, player.vehicle.position), {}, {
         h: player.vehicle.heading
-      }) : _objectSpread({}, player.position, {
+      }) : _objectSpread(_objectSpread({}, player.position), {}, {
         h: player.heading
       })));
     }
@@ -58856,7 +58866,7 @@ _npc.npc_dialog.new("Антонио", "Инструктор", new mp.Vector3(-70
 mp.events.add("playerJoin", player => {
   player.autoschoolExam = null;
 });
-},{"../modules/methods":"+qXS","../modules/menu":"Aiz7","../user":"+QE3","../../util/methods":"Z5QB","../vehicles":"pYYy","../modules/chat":"e1Zb","./parking":"ipvo","../modules/npc":"jKJb","../../util/string":"8Qkc","../../util/newrage":"mgLX"}],"nYeO":[function(require,module,exports) {
+},{"../modules/methods":"qXSp","../modules/menu":"Aiz7","../user":"QE3B","../../util/methods":"Z5QB","../vehicles":"pYYy","../modules/chat":"e1Zb","./parking":"ipvo","../modules/npc":"jKJb","../../util/string":"Qkcg","../../util/newrage":"mgLX"}],"nYeO":[function(require,module,exports) {
 "use strict";
 
 var _menu = require("./modules/menu");
@@ -58919,7 +58929,7 @@ mp.events.addRemoteCounted("server:user:testSetting", player => {
   });
   m.open();
 });
-},{"./modules/menu":"Aiz7","./user":"+QE3","./modules/methods":"+qXS","./socket":"wJlv"}],"7QCb":[function(require,module,exports) {
+},{"./modules/menu":"Aiz7","./user":"QE3B","./modules/methods":"qXSp","./socket":"wJlv"}],"QCba":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -59282,6 +59292,8 @@ async function init() {
 
     _vehicles.vehicles.loadAllTimers();
 
+    _vehicles.vehicles.loadAll();
+
     _object.object.loadAll();
 
     _timer.timer.loadAll();
@@ -59330,5 +59342,5 @@ async function init() {
 }
 
 init();
-},{"../util/newrage":"mgLX","./promisehack":"r9A/","../util/string":"8Qkc","./customEvent":"ARQI","./modules/events":"d3wo","./modules/shutdown":"9jff","./modules/data":"5Edc","./modules/fly":"VDhe","./modules/mp":"KjEE","./modules/doors":"H2nx","./log":"MNUA","./voice/voice":"5T7p","./web":"txRo","./socket":"wJlv","./ragevoice":"0VUJ","./modules/teleport":"xEa3","./modules/npc":"jKJb","./modules/quest":"SGiU","./modules/chest":"+eVh","./modules/mobile":"cEZh","./managers/restart":"3kxR","./managers/parking":"ipvo","./managers/attach_system":"uwcG","./managers/newPrototype":"0Gj2","./managers/tablet.events":"Fdqv","./managers/pickup.gift":"Sogq","./managers/february.event":"kkgo","./modules/gangwar":"cDXP","./modules/gang.deliver":"VWAY","./modules/ach":"ygeq","./modules/casino_slot_machines":"5Rr1","./modules/casino_roulette":"XMgA","./modules/casino_threecard_poker":"hevW","./modules/casino_dice":"JvB6","./modules/fingerpoint":"dnPV","./modules/christmas":"M8KQ","./modules/skate":"/9L+","./modules/c4grab":"TX0E","./modules/pacific.grab":"1QNC","./modules/casino.grab":"MZmO","./modules/fleeca.grab":"uhmi","./modules/army.weapon.grab":"anIM","./modules/duels":"LfX4","./modules/auction":"2PrT","./modules/mysql":"dPRi","./modules/methods":"+qXS","./modules/pickups":"xTdX","./modules/vehicleInfo":"f3Ap","./modules/timer":"29Bp","./managers/weather":"uehX","./managers/tax":"PN4J","./managers/mafiaWar":"hw/m","./managers/object":"o1IG","./inventory":"4m5o","./coffer":"sKID","./houses":"buna","./condo":"YoDO","./stock":"MdNj","./apartments":"qIZj","./vehicles":"pYYy","./business/cloth":"Lio2","./business/fuel":"nyp7","./business/shop":"e2yF","./business/carWash":"L23J","./business/barberShop":"bktO","./business/bank":"MvN0","./business/rent":"G8F2","./business/gun":"1/8Y","./business/lsc":"C62+","./business/bar":"ZO2Y","./business/tattoo":"Iy5w","./business/autosalon/index":"JYAF","./modules/race2":"n1sh","./managers/cameraRecord":"zg97","./jobs":"eOAh","./managers/autoschool":"GLP/","./modules/nosql":"7kYs","./test":"nYeO","./modules/admin":"s4Xg","./modules/garderob":"IU8T","./modules/fraction.vehicles.spawn":"5CvB","./modules/sequelize":"ylsz","./modules/moneyChest":"HIeq","./modules/whitelist":"H/Cq","./modules/customchest":"7s+a","./modules/entity/user":"xF3w","./user":"+QE3"}]},{},["7QCb"], null)
+},{"../util/newrage":"mgLX","./promisehack":"r9AO","../util/string":"Qkcg","./customEvent":"ARQI","./modules/events":"d3wo","./modules/shutdown":"jffZ","./modules/data":"Edcz","./modules/fly":"VDhe","./modules/mp":"KjEE","./modules/doors":"H2nx","./log":"MNUA","./voice/voice":"T7py","./web":"txRo","./socket":"wJlv","./ragevoice":"VUJK","./modules/teleport":"xEa3","./modules/npc":"jKJb","./modules/quest":"SGiU","./modules/chest":"eVha","./modules/mobile":"cEZh","./managers/restart":"kxRx","./managers/parking":"ipvo","./managers/attach_system":"uwcG","./managers/newPrototype":"Gj2G","./managers/tablet.events":"Fdqv","./managers/pickup.gift":"Sogq","./managers/february.event":"kkgo","./modules/gangwar":"cDXP","./modules/gang.deliver":"VWAY","./modules/ach":"ygeq","./modules/casino_slot_machines":"Rr1D","./modules/casino_roulette":"XMgA","./modules/casino_threecard_poker":"hevW","./modules/casino_dice":"JvB6","./modules/fingerpoint":"dnPV","./modules/christmas":"M8KQ","./modules/skate":"LKpP","./modules/c4grab":"TX0E","./modules/pacific.grab":"QNCd","./modules/casino.grab":"MZmO","./modules/fleeca.grab":"uhmi","./modules/army.weapon.grab":"anIM","./modules/duels":"LfX4","./modules/auction":"PrTm","./modules/mysql":"dPRi","./modules/methods":"qXSp","./modules/pickups":"xTdX","./modules/vehicleInfo":"f3Ap","./modules/timer":"BpKR","./managers/weather":"uehX","./managers/tax":"PN4J","./managers/mafiaWar":"hwMc","./managers/object":"o1IG","./inventory":"m5ow","./coffer":"sKID","./houses":"buna","./condo":"YoDO","./stock":"MdNj","./apartments":"qIZj","./vehicles":"pYYy","./business/cloth":"Lio2","./business/fuel":"nyp7","./business/shop":"e2yF","./business/carWash":"L23J","./business/barberShop":"bktO","./business/bank":"MvN0","./business/rent":"G8F2","./business/gun":"Y0m3","./business/lsc":"C62B","./business/bar":"ZO2Y","./business/tattoo":"Iy5w","./business/autosalon/index":"JYAF","./modules/race2":"n1sh","./managers/cameraRecord":"zg97","./jobs":"eOAh","./managers/autoschool":"GLPL","./modules/nosql":"kYse","./test":"nYeO","./modules/admin":"s4Xg","./modules/garderob":"IU8T","./modules/fraction.vehicles.spawn":"CvBw","./modules/sequelize":"ylsz","./modules/moneyChest":"HIeq","./modules/whitelist":"HCq8","./modules/customchest":"sAsv","./modules/entity/user":"xF3w","./user":"QE3B"}]},{},["QCba"], null)
 //# sourceMappingURL=/index.js.map
