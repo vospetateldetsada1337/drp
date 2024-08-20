@@ -293,7 +293,7 @@ function getColor(fnd) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.MainEvent = void 0;
+exports.MainEvent = void 0; // zalupa
 
 class MainEvent {
   constructor() {
